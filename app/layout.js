@@ -1,5 +1,13 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Rubik } from "next/font/google"; // ייבוא פונקציית הפונטים מגוגל
+
+// הגדרת פונט Rubik
+const rubik = Rubik({
+  subsets: ["hebrew", "latin"], // תומך בעברית ולטינית
+  weight: ["400", "500", "700"], // הגדרת משקלים לפי הצורך
+  variable: "--font-rubik", // משתנה CSS לשימוש בפונט
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,12 +26,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html
+      lang="he"
+      dir="rtl"
+      className={`${rubik.variable} ${geistSans.variable} ${geistMono.variable}`}
+    >
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
