@@ -12,6 +12,7 @@ const Hero = () => {
     <>
       {/* גרסת מובייל */}
       <section
+        id="home"
         className="bg-[#092274]  w-5/6 mx-auto max-h-[580px] lg:hidden relative font-rubik flex flex-col   rounded-xl h-screen px-0 py-0 overflow-hidden"
         style={{
           backgroundImage:
@@ -81,15 +82,8 @@ const Hero = () => {
       </section>
 
       {/* גרסת דסקטופ */}
-      <section
-        className="hidden w-5/6 mt-20 bg-[#092274] mx-auto lg:flex relative font-rubik flex-row max-h-[500px] items-center justify-between rounded-xl h-screen px-24 py-12 overflow-hidden"
-        // style={{
-        //   backgroundImage:
-        //     "radial-gradient(at center center, #333652 0%, #333652 33%, #0A2472 66%, #001C55 100%)",
-        //   direction: "rtl",
-        // }}
-      >
-        <div className="flex flex-col w-1/2 relative z-10 items-start">
+      <section className="hidden w-5/6 mt-10 bg-[#092274] mx-auto lg:flex relative font-rubik flex-row max-h-[500px]  rounded-xl h-screen px-24 py-12 overflow-hidden">
+        <div className="flex mt-12 flex-col w-1/2 relative z-10 items-start">
           {/* קיקר */}
           <p
             className="inline-block text-sm mb-3 font-light text-white border border-white rounded-full px-4 py-2"
@@ -138,13 +132,13 @@ const Hero = () => {
         </div>
 
         {/* תמונה */}
-        <div className="w-1/2  flex justify-end relative z-10">
+        <div className="w-1/2 flex mt-12 justify-end items-end relative z-10 h-full">
           <Image
-            src={heroImage2}
+            src={heroImage}
             alt="Hero Image Desktop"
-            width={400}
-            height={400}
-            className="h-auto"
+            width={950}
+            height={950}
+            className="h-full object-cover"
             priority
           />
         </div>

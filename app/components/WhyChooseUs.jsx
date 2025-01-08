@@ -20,9 +20,9 @@ const WhyChooseUs = () => {
         <lord-icon
           src="https://cdn.lordicon.com/bmhttwyu.json"
           trigger="loop"
-          delay="2000"
+          delay="1000"
           colors="primary:#4be1ec,secondary:#2516c7"
-          style={{ width: "60px", height: "60px" }}
+          style={{ width: "70px", height: "70px" }}
         ></lord-icon>
       ),
       title: "ייעוץ וליווי אישי",
@@ -33,9 +33,8 @@ const WhyChooseUs = () => {
       icon: (
         <lord-icon
           src="https://cdn.lordicon.com/tetzmwxb.json"
-          trigger="loop-on-hover"
-          delay="1000"
-          state="morph-select"
+          trigger="loop"
+          delay="2000"
           colors="primary:#4be1ec,secondary:#2516c7"
           style={{ width: "60px", height: "60px" }}
         ></lord-icon>
@@ -44,12 +43,13 @@ const WhyChooseUs = () => {
       description:
         "צוותי המכירות שלנו הם הטובים ביותר, עם ניסיון רב והתמקדות בביצועים שמביאים תוצאות לעסק שלכם.",
     },
+
     {
       icon: (
         <lord-icon
           src="https://cdn.lordicon.com/boconccx.json"
           trigger="loop"
-          delay="2000"
+          delay="1000"
           colors="primary:#4be1ec,secondary:#2516c7"
           style={{ width: "60px", height: "60px" }}
         ></lord-icon>
@@ -62,7 +62,8 @@ const WhyChooseUs = () => {
       icon: (
         <lord-icon
           src="https://cdn.lordicon.com/uxxlutsg.json"
-          trigger="hover"
+          trigger="loop"
+          delay="2000"
           colors="primary:#4be1ec,secondary:#2516c7"
           style={{ width: "60px", height: "60px" }}
         ></lord-icon>
@@ -76,7 +77,7 @@ const WhyChooseUs = () => {
         <lord-icon
           src="https://cdn.lordicon.com/hwdepqex.json"
           trigger="loop"
-          delay="2000"
+          delay="1000"
           colors="primary:#4be1ec,secondary:#2516c7"
           style={{ width: "60px", height: "60px" }}
         ></lord-icon>
@@ -88,7 +89,7 @@ const WhyChooseUs = () => {
     {
       icon: (
         <lord-icon
-          src="https://cdn.lordicon.com/bmhttwyu.json"
+          src="https://cdn.lordicon.com/gmgoryua.json"
           trigger="loop"
           delay="2000"
           colors="primary:#4be1ec,secondary:#2516c7"
@@ -111,17 +112,17 @@ const WhyChooseUs = () => {
             <div className="h-1 w-full bg-[#5479f7] absolute rounded-full bottom-0 left-0 mt-1"></div>
           </span>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-4 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           {features.map((feature, index) => (
             <div
               key={index}
               className="flex flex-col justify-between h-full items-center text-center rounded-lg p-6 shadow-lg hover:shadow-2xl shadow-[#9fa0a2] transition-shadow bg-white z-10"
             >
               <div className="mb-auto flex justify-center">{feature.icon}</div>
-              <h3 className="text-lg font-bold text-[#001c55] mt-4">
+              <h3 className="text-lg font-bold text-[#001c55] mt-1">
                 {feature.title}
               </h3>
-              <p className="text-sm text-[#001c55] mt-2">
+              <p className="text-sm text-[#001c55] mt-1">
                 {feature.description}
               </p>
             </div>

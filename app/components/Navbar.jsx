@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image"; // לשימוש בלוגו
-import Logo from "../../public/images/logo.svg"; // ייבוא הלוגו
+import Image from "next/image";
+import Logo from "../../public/images/smart sales.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,75 +34,69 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-colors duration-300 ${
+      className={`sticky z-50 font-rubik transition-all duration-300 ${
         isScrolled || isOpen
-          ? "bg-white text-black"
-          : "bg-transparent text-black"
+          ? "bg-white top-0 text-black shadow-md border-b border-black"
+          : "bg-transparent md:top-5 top-0 text-black"
       }`}
     >
-      <div className="w-5/6 mx-auto sm:px-6 ">
-        <div className="flex items-center justify-between mx-auto h-16">
-          {/* כפתור המבורגר */}
-          <div className="md:hidden flex justify-end">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-[#092274] hover:text-[#455cb7] focus:outline-none"
+      <div className="w-5/6 mx-auto">
+        <div className="flex items-center justify-between w-full h-20">
+          {/* כפתור המבורגר במובייל */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-black hover:text-[#092274] focus:outline-none md:hidden"
+          >
+            <svg
+              className="h-10 w-10"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24"
             >
-              <svg
-                className="h-8 w-8"
-                stroke="currentColor"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                {isOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                )}
-              </svg>
-            </button>
-          </div>
+              {isOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              )}
+            </svg>
+          </button>
 
           {/* לוגו */}
-          <div className="flex items-center">
-            <Link href="#home">
-              <Image
-                src={Logo}
-                alt="Smart Sales Logo"
-                width={150} // גודל הלוגו
-                height={50}
-                className="h-auto"
-              />
-            </Link>
-          </div>
+          <Link href="#home">
+            <Image
+              src={Logo}
+              alt="Smart Sales Logo"
+              className="h-auto w-16 md:w-20 md:h-auto" // גודל גדול יותר בדסקטופ
+            />
+          </Link>
 
-          {/* תפריט במצב רחב */}
-          <div className="hidden md:grid grid-cols-3 w-3/6 items-center text-center">
-            <button
-              onClick={() => scrollToSection("services")}
-              className="hover:text-[#FFC107] text-lg px-3 py-2 rounded-md font-medium text-black"
-            >
-              שירותים
-            </button>
+          {/* תפריט דסקטופ */}
+          <div className="hidden md:flex w-full items-end justify-end rtl space-x-reverse space-x-14">
             <button
               onClick={() => scrollToSection("about")}
-              className="hover:text-[#FFC107] px-3 py-2 rounded-md text-lg font-medium text-black"
+              className="text-black hover:text-[#092274] text-lg font-bold"
             >
-              אודות
+              מי אנחנו
+            </button>
+            <button
+              onClick={() => scrollToSection("faq")}
+              className="text-black hover:text-[#092274] text-lg font-bold"
+            >
+              שאלות נפוצות
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="hover:text-[#FFC107] px-3 py-2 rounded-md text-lg font-medium text-black"
+              className="text-black hover:text-[#092274] text-lg font-bold"
             >
               יצירת קשר
             </button>
@@ -110,45 +104,25 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* תפריט במצב נייד */}
+      {/* תפריט מובייל */}
       {isOpen && (
-        <div className="fixed top-0 left-0 w-full h-screen bg-[#001C55] text-white z-40 flex flex-col items-start p-6">
-          {/* כפתור סגירה */}
-          <button
-            onClick={() => setIsOpen(false)}
-            className="absolute top-4 right-4 text-[#092274] hover:text-white"
-          >
-            <svg
-              className="h-8 w-8"
-              stroke="currentColor"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-
-          <div className="space-y-3 mt-12 text-right w-full pr-2">
-            <button
-              onClick={() => scrollToSection("services")}
-              className="block text-2xl hover:text-[#FFC107] px-3 py-2 rounded-md font-medium"
-            >
-              שירותים
-            </button>
+        <div className="absolute top-20 left-0 w-full bg-white text-black transition-all duration-300 border-b shadow-md z-50">
+          <div className="text-right w-full">
             <button
               onClick={() => scrollToSection("about")}
-              className="block text-2xl hover:text-[#FFC107] px-3 py-2 rounded-md font-medium"
+              className="block text-lg py-3 pr-10 border-b text-right border-gray-300 w-full hover:text-[#092274] font-medium"
             >
-              אודות
+              מי אנחנו
+            </button>
+            <button
+              onClick={() => scrollToSection("faq")}
+              className="block text-lg py-3 pr-10 border-b text-right border-gray-300 w-full hover:text-[#092274] font-medium"
+            >
+              שאלות נפוצות
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="block text-2xl hover:text-[#FFC107] px-3 py-2 rounded-md font-medium"
+              className="block text-lg py-3 pr-10 w-full text-right hover:text-[#092274] font-medium"
             >
               יצירת קשר
             </button>
