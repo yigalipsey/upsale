@@ -120,7 +120,7 @@ const WhyChooseUs = () => {
               initial={{ opacity: 0, y: 50 }} // מצב התחלתי
               whileInView={{ opacity: 1, y: 0 }} // מצב בזמן גלילה
               viewport={{ once: true, amount: 0.3 }} // הפעלה פעם אחת
-              transition={{ duration: 0.8, delay: index * 0.2 }} // זמן ודיליי
+              transition={{ duration: 0.8, delay: index * 0.1 }} // זמן ודיליי
             >
               <div className="mb-auto flex justify-center">{feature.icon}</div>
               <h3 className="text-lg font-bold text-[#001c55] mt-1">
