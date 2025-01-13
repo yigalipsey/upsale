@@ -35,7 +35,7 @@ const Hero = () => {
           </p>
 
           {/* כותרת ראשית */}
-          <h1 className="text-2xl mb-3 font-bold leading-tight relative">
+          <h1 className="text-2xl mb-3 font-bold text-white leading-tight relative">
             <span>מוקד המכירות החיצוני</span>
             <br />
             <span className="relative">
@@ -62,7 +62,7 @@ const Hero = () => {
           </h1>
 
           {/* כותרת משנית */}
-          <p className="text-sm mb-5 w-5/6 font-light">
+          <p className="text-sm mb-5 w-5/6 text-white font-light">
             אנו מספקים צוותי מכירות מקצועיים לעסקים. עם ניהול צמוד, תסריטי שיחה
             מותאמים אישית, וסדנאות מכירה קבועות. חיסכו זמן, כסף ומשאבים - ותנו
             לנו לדאוג להצלחה שלכם.
@@ -111,10 +111,10 @@ const Hero = () => {
           </p>
 
           {/* כותרת ראשית */}
-          <h1 className="text-4xl mb-3 font-bold leading-tight relative">
-            <span>מוקד המכירות החיצוני</span>
+          <h1 className="text-4xl  mb-3 font-bold leading-tight relative">
+            <span className=" text-white">מוקד המכירות החיצוני</span>
             <br />
-            <span className="relative">
+            <span className="relative  text-white">
               שמביא תוצאות
               <motion.div
                 initial={{ scale: 0 }}
@@ -131,7 +131,7 @@ const Hero = () => {
           </h1>
 
           {/* כותרת משנית */}
-          <p className="text-lg mb-5 font-light">
+          <p className="text-lg  text-white mb-5 font-light">
             אנו מספקים צוותי מכירות מקצועיים לעסקים. עם ניהול צמוד, תסריטי שיחה
             מותאמים אישית, וסדנאות מכירה קבועות. חיסכו זמן, כסף ומשאבים - ותנו
             לנו לדאוג להצלחה שלכם.

@@ -7,10 +7,6 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
       fontFamily: {
         rubik: ["var(--font-rubik)", "sans-serif"], // הוספת פונט Rubik
       },
