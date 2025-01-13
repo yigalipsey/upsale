@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import { motion } from "motion/react";
 
 const WhyChooseUs = () => {
   useEffect(() => {
@@ -43,7 +44,6 @@ const WhyChooseUs = () => {
       description:
         "צוותי המכירות שלנו הם הטובים ביותר, עם ניסיון רב והתמקדות בביצועים שמביאים תוצאות לעסק שלכם.",
     },
-
     {
       icon: (
         <lord-icon
@@ -114,9 +114,13 @@ const WhyChooseUs = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           {features.map((feature, index) => (
-            <div
+            <motion.div
               key={index}
               className="flex flex-col justify-between h-full items-center text-center rounded-lg p-6 shadow-lg hover:shadow-2xl shadow-[#9fa0a2] transition-shadow bg-white z-10"
+              initial={{ opacity: 0, y: 50 }} // מצב התחלתי
+              whileInView={{ opacity: 1, y: 0 }} // מצב בזמן גלילה
+              viewport={{ once: true, amount: 0.3 }} // הפעלה פעם אחת
+              transition={{ duration: 0.8, delay: index * 0.2 }} // זמן ודיליי
             >
               <div className="mb-auto flex justify-center">{feature.icon}</div>
               <h3 className="text-lg font-bold text-[#001c55] mt-1">
@@ -125,7 +129,7 @@ const WhyChooseUs = () => {
               <p className="text-sm text-[#001c55] mt-1">
                 {feature.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

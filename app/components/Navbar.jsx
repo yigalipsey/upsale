@@ -28,7 +28,13 @@ const Navbar = () => {
     setIsOpen(false);
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const offset = 80; // גובה ה-Navbar
+      const sectionPosition =
+        section.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: sectionPosition - offset,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -39,13 +45,23 @@ const Navbar = () => {
           ? "bg-white top-0 text-black shadow-md border-b border-black"
           : "bg-transparent md:top-5 top-0 text-black"
       }`}
+      style={{ direction: "rtl" }}
     >
       <div className="w-5/6 mx-auto">
         <div className="flex items-center justify-between w-full h-20">
+          {/* לוגו */}
+          <Link href="#home" className="flex">
+            <Image
+              src={Logo}
+              alt="Smart Sales Logo"
+              className="h-auto w-16 md:w-20 md:h-auto"
+            />
+          </Link>
+
           {/* כפתור המבורגר במובייל */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-black hover:text-[#092274] focus:outline-none md:hidden"
+            className="md:hidden text-black hover:text-[#092274] focus:outline-none"
           >
             <svg
               className="h-10 w-10"
@@ -71,17 +87,8 @@ const Navbar = () => {
             </svg>
           </button>
 
-          {/* לוגו */}
-          <Link href="#home">
-            <Image
-              src={Logo}
-              alt="Smart Sales Logo"
-              className="h-auto w-16 md:w-20 md:h-auto" // גודל גדול יותר בדסקטופ
-            />
-          </Link>
-
           {/* תפריט דסקטופ */}
-          <div className="hidden md:flex w-full items-end justify-end rtl space-x-reverse space-x-14">
+          <div className="hidden md:flex items-center space-x-reverse space-x-14">
             <button
               onClick={() => scrollToSection("about")}
               className="text-black hover:text-[#092274] text-lg font-bold"
