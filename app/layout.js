@@ -22,6 +22,9 @@ export const metadata = {
   title: " Smart Sales | המומחים במכירות במיקור חוץ",
   description:
     "הרחיבו את צוות המכירות שלכם עם מיקור חוץ איכותי! אנו מספקים צוותי מכירות מקצועיים עם ניהול צמוד, תסריטי שיחה מותאמים אישית וסדנאות מכירה קבועות. חיסכו זמן, כסף ומשאבים – ותנו לנו לדאוג להצלחה שלכם.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {

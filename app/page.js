@@ -7,6 +7,8 @@ import AboutUs from "./components/AboutUs";
 import FaqSection from "./components/FaqSection";
 import FooterWithContact from "./components/FooterWithContact";
 
+<link rel="icon" href="/favicon.ico" sizes="any" />;
+
 export default function Home() {
   return (
     <div className="">
