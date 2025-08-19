@@ -80,14 +80,22 @@ const FaqSection = () => {
               <button
                 className="w-full text-right px-4 py-3 flex justify-between items-center font-medium text-lg"
                 onClick={() => toggleQuestion(index)}
+                aria-expanded={activeIndex === index}
+                aria-controls={`faq-answer-${index}`}
+                aria-label={`${faq.question} - לחץ לפתיחה או סגירה`}
               >
                 <span>{faq.question}</span>
-                <span className="ml-2 text-[#001c55]">
+                <span className="ml-2 text-[#001c55]" aria-hidden="true">
                   {activeIndex === index ? "-" : "+"}
                 </span>
               </button>
               {activeIndex === index && (
-                <div className="px-4 py-3 text-gray-700 text-sm lg:text-base">
+                <div 
+                  id={`faq-answer-${index}`}
+                  className="px-4 py-3 text-gray-700 text-sm lg:text-base"
+                  role="region"
+                  aria-labelledby={`faq-question-${index}`}
+                >
                   {faq.answer}
                 </div>
               )}

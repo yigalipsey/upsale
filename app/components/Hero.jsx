@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { FiArrowLeft } from "react-icons/fi";
 
@@ -16,7 +16,7 @@ const Hero = () => {
       {/* גרסת מובייל */}
       <section
         id="home"
-        className="bg-[#092274] w-5/6 mx-auto max-h-[580px] lg:hidden relative font-rubik flex flex-col rounded-xl h-screen px-0 py-0 overflow-hidden"
+        className="bg-[#092274] w-5/6 mx-auto max-h-[580px] lg:hidden relative font-rubik flex flex-col rounded-xl h-screen px-0 py-0 overflow-hidden mt-5"
         style={{
           backgroundImage:
             "radial-gradient(at center center, #333652 0%, ##333652 33%, ##333652 66%, #333652 100%)",
@@ -64,8 +64,9 @@ const Hero = () => {
           {/* כותרת משנית */}
           <p className="text-sm mb-5 w-5/6 text-white font-light">
             אנו מספקים צוותי מכירות מקצועיים לעסקים. עם ניהול צמוד, תסריטי שיחה
-            מותאמים אישית, וסדנאות מכירה קבועות. חיסכו זמן, כסף ומשאבים - ותנו
-            לנו לדאוג להצלחה שלכם.
+            מותאמים אישית ומיקוד בתיאום פגישות וסגירת עסקאות – אנחנו הופכים
+            מתעניינים ללקוחות. חיסכו זמן, כסף ומשאבים – ותנו לנו לדאוג להצלחה
+            שלכם.{" "}
           </p>
 
           {/* כפתור */}
@@ -76,6 +77,8 @@ const Hero = () => {
               background: "linear-gradient(to right, #FFC107, #FFD54F)",
               color: "#001c55",
             }}
+            aria-label="לשיחת ייעוץ ומידע נוסף"
+            role="button"
           >
             לשיחת ייעוץ ומידע נוסף
           </a>
@@ -97,7 +100,7 @@ const Hero = () => {
       {/* גרסת דסקטופ */}
       <section
         id="home"
-        className="hidden w-5/6 mt-10 bg-[#092274] mx-auto lg:flex relative font-rubik flex-row max-h-[500px] rounded-xl h-screen px-24 py-12 overflow-hidden"
+        className="hidden w-5/6 mt-5 bg-[#092274] mx-auto lg:flex relative font-rubik flex-row max-h-[500px] rounded-xl h-screen px-24 py-12 overflow-hidden"
       >
         <div className="flex mt-12 flex-col w-1/2 relative z-10 items-start">
           {/* קיקר */}
@@ -133,8 +136,9 @@ const Hero = () => {
           {/* כותרת משנית */}
           <p className="text-lg  text-white mb-5 font-light">
             אנו מספקים צוותי מכירות מקצועיים לעסקים. עם ניהול צמוד, תסריטי שיחה
-            מותאמים אישית, וסדנאות מכירה קבועות. חיסכו זמן, כסף ומשאבים - ותנו
-            לנו לדאוג להצלחה שלכם.
+            מותאמים אישית ומיקוד בתיאום פגישות וסגירת עסקאות – אנחנו הופכים
+            מתעניינים ללקוחות. חיסכו זמן, כסף ומשאבים – ותנו לנו לדאוג להצלחה
+            שלכם.
           </p>
 
           {/* כפתור */}
@@ -145,6 +149,8 @@ const Hero = () => {
               background: "linear-gradient(to right, #FAD02C , #FFD54F)",
               color: "#001c55",
             }}
+            aria-label="לשיחת ייעוץ ומידע נוסף"
+            role="button"
           >
             לשיחת ייעוץ ומידע נוסף
           </a>

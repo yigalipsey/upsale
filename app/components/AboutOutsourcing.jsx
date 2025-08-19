@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const AboutOutsourcing = () => {
   return (
@@ -22,8 +23,8 @@ const AboutOutsourcing = () => {
             מתמשך עם הלקוח.
           </p>
           <p className="text-base text-gray-700 leading-relaxed mb-2">
-            <span className="font-bold text-[#001c55]">Smart Sales</span> היא
-            חברה שמביאה איתה את כל הכלים, המשאבים והניסיון הדרושים לניהול תהליכי
+            <span className="font-bold text-[#001c55]">Upsale</span> היא חברה
+            שמביאה איתה את כל הכלים, המשאבים והניסיון הדרושים לניהול תהליכי
             מכירה מורכבים. צוותי המכירות שלנו עובדים מסביב לשעון כדי להפוך לידים
             ללקוחות נאמנים ולספק לך שקט נפשי – כך שתוכל להתמקד בניהול העסק שלך.
           </p>
@@ -36,9 +37,10 @@ const AboutOutsourcing = () => {
         {/* תמונה */}
         <div className="lg:w-1/2 flex justify-center lg:justify-end">
           <img
-            src="/images/344.svg" // שים פה את התמונה הרצויה
-            alt="Outsourcing Team"
+            src="/images/344.svg"
+            alt="צוות מיקור חוץ מקצועי - Smart Sales"
             className="w-[80%] rounded-2xl"
+            loading="lazy"
           />
         </div>
       </div>

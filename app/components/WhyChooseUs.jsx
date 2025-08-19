@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const WhyChooseUs = () => {
   useEffect(() => {
@@ -108,7 +108,7 @@ const WhyChooseUs = () => {
         <h2 className="text-2xl md:text-4xl font-extrabold text-[#001c55] uppercase">
           למה לבחור ב
           <span className="relative mr-1 text-xl md:text-3xl font-bold text-[#001c55]">
-            SMART SALES?
+            UPSALE?
             <div className="h-1 w-full bg-[#5479f7] absolute rounded-full bottom-0 left-0 mt-1"></div>
           </span>
         </h2>

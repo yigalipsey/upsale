@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../../public/images/logofooter.svg";
+import Logo from "../../public/images/logo.png";
 
 const FooterWithContact = () => {
   const [formStatus, setFormStatus] = useState(null); // null, "success", or "error"
@@ -105,6 +105,7 @@ const FooterWithContact = () => {
             <button
               type="submit"
               className="w-full bg-[#279c21] text-white py-3 px-6 hover:text-black rounded-lg shadow-md hover:bg-[#29a53a] transition duration-300 font-bold text-lg"
+              aria-label="שלח הודעת יצירת קשר"
             >
               שלח
             </button>
@@ -127,11 +128,11 @@ const FooterWithContact = () => {
             <Image
               src={Logo}
               alt="Smart Sales Logo"
-              width={120}
-              height={120}
+              width={60}
+              height={60}
               className="mx-auto text-white lg:mx-0"
             />
-            <p className="text-sm mt-2 md:-mt-3">
+            <p className="text-sm mt-10 md:-mt-3">
               המומחים שלנו כאן כדי לעזור לכם להרחיב את העסק שלכם בצורה מקצועית
               ובטוחה.
             </p>
