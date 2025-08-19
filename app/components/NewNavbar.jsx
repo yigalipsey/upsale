@@ -131,7 +131,7 @@ const NewNavbar = () => {
                   <button
                     key={item.href}
                     onClick={() => handleSmoothScroll(item.href)}
-                    className="text-base font-medium transition-colors hover:text-white text-[#092274]"
+                    className="text-base font-medium transition-colors hover:text-[#001c55] text-[#092274]"
                   >
                     {item.label}
                   </button>
@@ -139,7 +139,7 @@ const NewNavbar = () => {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`text-base font-medium transition-colors hover:text-white ${
+                    className={`text-base font-medium transition-colors hover:text-[#001c55] ${
                       pathname === item.href ? "text-white" : "text-[#092274]"
                     }`}
                   >

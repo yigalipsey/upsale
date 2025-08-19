@@ -40,7 +40,7 @@ const FeaturesSection = () => {
                 יותר מ־100 עסקים קטנים כבר הגדילו מכירות בעזרת Upsale מאז 2022 —
                 כך אנחנו עושים את זה{" "}
               </p>
-              <div className="text-center lg:text-right">
+              <div className="text-center lg:text-right hidden lg:block">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -62,26 +62,26 @@ const FeaturesSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="bg-gray-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-gray-100 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-right">
-                  <div
-                    className="w-full mb-4 relative"
-                    style={{ height: "200px" }}
-                  >
+                  <div className="w-full relative">
                     <Image
                       src={card.image}
                       alt={card.title}
-                      fill
-                      className="object-cover rounded-lg"
+                      width={600}
+                      height={400}
+                      className="w-[calc(100%-10px)] mx-[5px] mt-[5px] h-auto object-contain rounded-xl"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-[#092274] mb-3">
-                    {card.title}
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    {card.description}
-                  </p>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-[#092274] mb-3">
+                      {card.title}
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      {card.description}
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             ))}
