@@ -58,7 +58,7 @@ const NewNavbar = () => {
       className={`fixed left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
           ? "top-0 bg-white border-b border-[#092274]"
-          : "top-5 bg-transparent"
+          : "top-5 md:top-5 top-2 bg-transparent"
       }`}
       role="navigation"
       aria-label="ניווט ראשי"
@@ -102,7 +102,7 @@ const NewNavbar = () => {
         <div className="md:hidden absolute left-4 top-1/2 -translate-y-1/2 z-[9999] flex items-center justify-center">
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/images/logo.png"
+              src="/images/smal-logo.avif"
               alt="Upsale Logo"
               width={120}
               height={40}
@@ -111,11 +111,11 @@ const NewNavbar = () => {
           </Link>
         </div>
 
-        <div className="flex pb-2 justify-between items-center h-16">
+        <div className="flex pb-2 justify-between items-center h-14 md:h-16">
           {/* לוגו - בצד שמאל (דסקטופ בלבד) */}
           <Link href="/" className="flex-shrink-0 hidden md:block">
             <Image
-              src="/images/logo.png"
+              src="/images/smal-logo.avif"
               alt="Upsale Logo"
               width={120}
               height={40}
@@ -170,7 +170,7 @@ const NewNavbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ type: "tween", duration: 0.3, ease: "easeOut" }}
-              className="fixed inset-0 z-50 bg-white md:hidden"
+              className="fixed inset-0 z-50 bg-white md:hidden min-h-screen"
               onClick={(e) => {
                 if (e.target === e.currentTarget) {
                   setIsMenuOpen(false);
@@ -199,7 +199,7 @@ const NewNavbar = () => {
                     },
                   },
                 }}
-                className="flex flex-col w-full h-screen px-6 py-8 justify-center"
+                className="flex flex-col w-full min-h-screen px-6 py-8 justify-center"
               >
                 {navItems.map((item, index) => (
                   <motion.li

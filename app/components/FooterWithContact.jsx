@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../../public/images/logo.png";
+import Logo from "../../public/images/smal-logo.avif";
 
 const FooterWithContact = () => {
   const [formStatus, setFormStatus] = useState(null); // null, "success", or "error"
@@ -132,7 +132,7 @@ const FooterWithContact = () => {
               height={60}
               className="mx-auto text-white lg:mx-0"
             />
-            <p className="text-sm mt-10 md:-mt-3">
+            <p className="text-sm mt-10 ">
               המומחים שלנו כאן כדי לעזור לכם להרחיב את העסק שלכם בצורה מקצועית
               ובטוחה.
             </p>

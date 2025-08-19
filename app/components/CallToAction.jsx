@@ -9,8 +9,12 @@ const CallToAction = () => {
       <div className="absolute top-1/2 right-10 md:right-10 left-10 md:left-auto transform -translate-y-1/2 z-10 max-w-[600px] text-center md:text-right">
         <h2 className="text-[2.5rem] font-bold mb-2">בואו ניצור קשר</h2>
         <p className="text-[1.2rem] mb-4">
-          רוצים לראות תוצאות כבר מהחודש הראשון?
-          <br />
+          רוצים לראות תוצאות
+          <br className="block lg:hidden" />
+          <span className="block lg:inline"> </span>
+          <span className="block lg:inline">כבר מהחודש הראשון?</span>
+          <br className="block lg:hidden" />
+          <br className="hidden lg:block" />
           השאירו פרטים ונצא לדרך.
         </p>
         <a

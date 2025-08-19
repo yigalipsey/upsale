@@ -35,6 +35,9 @@ const StyledWrapper = styled.div`
     @media (max-width: 768px) {
       left: 50%;
       transform: translateX(-50%);
+      --size: 300px;
+      height: var(--size);
+      bottom: -150px;
       --background: linear-gradient(
         0deg,
         rgba(255, 255, 255, 0.05) 0%,

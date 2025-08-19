@@ -16,7 +16,13 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-rubik), Arial, Helvetica, sans-serif;
-  padding-top: 100px;
+  padding-top: 80px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 100px;
+  }
 }
 
 * {
