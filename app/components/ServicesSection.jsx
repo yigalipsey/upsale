@@ -52,7 +52,7 @@ const ServicesSection = () => {
                   </h3>
 
                   {/* תיאור */}
-                  <p className="text-gray-600 leading-relaxed mb-6 flex-grow">
+                  <p className="text-gray-700 leading-relaxed mb-6 flex-grow">
                     {service.description}
                   </p>
 

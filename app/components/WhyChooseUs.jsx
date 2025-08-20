@@ -126,7 +126,7 @@ const WhyChooseUs = () => {
               <h3 className="text-lg font-bold text-[#001c55] mt-1">
                 {feature.title}
               </h3>
-              <p className="text-sm text-[#001c55] mt-1">
+              <p className="text-sm text-gray-700 mt-1">
                 {feature.description}
               </p>
             </motion.div>

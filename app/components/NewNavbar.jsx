@@ -64,6 +64,7 @@ const NewNavbar = () => {
             className="p-2 text-[#092274] border border-[#092274] hover:bg-[#092274]/10 rounded-lg transition-colors"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
+            aria-label="פתח/סגור תפריט ניווט"
           >
             <div className="w-6 h-6 flex flex-col justify-center items-center">
               <span

@@ -1,17 +1,16 @@
 import "./globals.css";
-import { Rubik } from "next/font/google"; // ייבוא פונקציית הפונטים מגוגל
+import { Rubik } from "next/font/google";
 
-// הגדרת פונט Rubik
 const rubik = Rubik({
-  subsets: ["hebrew", "latin"], // תומך בעברית ולטינית
-  weight: ["400", "500", "700"], // הגדרת משקלים לפי הצורך
-  variable: "--font-rubik", // משתנה CSS לשימוש בפונט
-  display: "swap", // שיפור ביצועים לטעינת פונטים
-  preload: true, // טעינה מוקדמת של הפונט
+  subsets: ["hebrew", "latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-rubik",
+  display: "swap",
+  preload: true,
 });
 
 export const metadata = {
-  metadataBase: new URL("https://upsale.co.il"), // החלף עם הדומיין האמיתי שלך
+  metadataBase: new URL("https://upsale.co.il"),
   title: {
     default: "Upsale | המומחים במכירות במיקור חוץ",
     template: "%s | Upsale",
@@ -50,7 +49,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "he_IL",
-    url: "https://upsale.co.il", // החלף עם הדומיין האמיתי שלך
+    url: "https://upsale.co.il",
     siteName: "Upsale",
     title: "Upsale | המומחים במכירות במיקור חוץ",
     description:
@@ -69,17 +68,17 @@ export const metadata = {
     title: "Upsale | המומחים במכירות במיקור חוץ",
     description: "הרחיבו את צוות המכירות שלכם עם מיקור חוץ איכותי!",
     images: ["/images/hero.avif"],
-    creator: "@upsale", // החלף עם הטוויטר האמיתי שלך
+    creator: "@upsale",
   },
   alternates: {
-    canonical: "https://upsale.co.il", // החלף עם הדומיין האמיתי שלך
+    canonical: "https://upsale.co.il",
   },
   icons: {
     icon: [{ url: "/favicon.ico", sizes: "any" }],
   },
   manifest: "/site.webmanifest",
   verification: {
-    google: "your-google-verification-code", // החלף עם הקוד האמיתי שלך
+    google: "your-google-verification-code",
   },
 };
 

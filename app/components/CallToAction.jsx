@@ -32,8 +32,7 @@ const CallToAction = () => {
             background: "linear-gradient(to right, #FFC107, #FFD54F)",
             color: "#001c55",
           }}
-          aria-label="קבעו שיחת גילוי"
-          role="button"
+          aria-label="צרו קשר"
         >
           צרו קשר{" "}
         </a>

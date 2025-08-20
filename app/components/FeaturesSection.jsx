@@ -36,7 +36,7 @@ const FeaturesSection = () => {
               <h2 className="text-3xl lg:text-4xl font-bold text-[#092274] mb-2 text-center lg:text-right">
                 מה מבדיל אותנו מהאחרים
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-2 text-center lg:text-right">
+              <p className="text-lg text-gray-800 leading-relaxed mb-2 text-center lg:text-right">
                 יותר מ40 עסקים קטנים כבר הגדילו מכירות בעזרת Upsale מאז 2022 —
                 כך אנחנו עושים את זה{" "}
               </p>
