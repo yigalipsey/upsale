@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
+import NextImage from "next/image";
 import Logo from "../../public/images/smal-logo.avif";
 
 const FooterWithContact = () => {
@@ -125,12 +125,13 @@ const FooterWithContact = () => {
         {/* פוטר */}
         <div className="lg:w-1/2 lg:mr-10 flex flex-col text-center lg:text-right mt-5 md:-mt-16 space-y-6">
           <div>
-            <Image
+            <NextImage
               src={Logo}
               alt="Smart Sales Logo"
               width={60}
               height={60}
               className="mx-auto text-white lg:mx-0"
+              priority
             />
             <p className="text-sm mt-10 ">
               המומחים שלנו כאן כדי לעזור לכם להרחיב את העסק שלכם בצורה מקצועית

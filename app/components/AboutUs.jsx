@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import NextImage from "next/image";
 
 const AboutUs = () => {
   return (
@@ -57,9 +58,11 @@ const AboutUs = () => {
 
       {/* תמונה */}
       <div className=" lg:w-[48%] lg:h-full -mt-4 ">
-        <img
+        <NextImage
           src="/images/aboutus.png"
           alt="צוות Upsale - מומחי מכירות במיקור חוץ"
+          width={600}
+          height={400}
           className="object-cover rounded-lg"
         />
       </div>

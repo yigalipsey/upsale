@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import NextImage from "next/image";
 import Link from "next/link";
 
 const ServicesSection = () => {
@@ -51,7 +51,7 @@ const ServicesSection = () => {
                 <div className="text-center">
                   {/* תמונה */}
                   <div className="w-full mb-6">
-                    <Image
+                    <NextImage
                       src={service.image}
                       alt={service.title}
                       width={400}

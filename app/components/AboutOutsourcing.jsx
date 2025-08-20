@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import NextImage from "next/image";
 
 const AboutOutsourcing = () => {
   return (
@@ -36,11 +36,13 @@ const AboutOutsourcing = () => {
 
         {/* תמונה */}
         <div className="lg:w-1/2 flex justify-center lg:justify-end">
-          <img
+          <NextImage
             src="/images/344.svg"
             alt="צוות מיקור חוץ מקצועי - Smart Sales"
+            width={400}
+            height={300}
             className="w-[80%] rounded-2xl"
-            loading="lazy"
+            priority
           />
         </div>
       </div>

@@ -2,27 +2,27 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import NextImage from "next/image";
 
 const FeaturesSection = () => {
   const cards = [
     {
-      title: "אסטרטגיות מותאמות אישית לכל הערוצים",
+      title: " תוצאות ראשונות כבר בשלבים הראשונים   ",
       description:
-        "בניגוד לגישות סטנדרטיות של סוכנויות אחרות, אנחנו יוצרים תוכניות גיוס מותאמות אישית שמתאימות בדיוק למטרות העסקיות הייחודיות שלכם ומשלבות מאמצי מכירות יוצאים ונכנסים.",
-      image: "/images/itronot/1.png",
+        "אנחנו לא מבטיחים קסמים, אבל אנחנו כן מבטיחים תהליך שמייצר תוצאה — מהר, מדויק, ובשקיפות מלאה.",
+      image: "/images/itronot/2.avif",
     },
     {
       title: "צוות מקצועי עם ניסיון מוכח",
       description:
-        "הצוות שלנו כולל אנשי מכירות מנוסים עם מעל 10 שנות ניסיון בתחום. אנחנו מתמחים במכירות B2B ו-B2C ומביאים תוצאות מוכחות לכל לקוח.",
-      image: "/images/itronot/2.png",
+        "אנשי מכירות שיודעים לדבר עם לקוחות, להתמודד עם התנגדויות, ולסגור עסקאות — לא תיאוריה, אלא ניסיון מהשטח.",
+      image: "/images/itronot/3.avif",
     },
     {
       title: "תוצאות מדידות ומוכחות",
       description:
-        "אנו מספקים דוחות מפורטים על הביצועים עם מדדי הצלחה ברורים. הלקוחות שלנו נהנים מעלייה של 25% במכירות בממוצע תוך 3 חודשים.",
-      image: "/images/itronot/3.png",
+        "כל שיחה מתועדת, כל ליד נבחן, וכל תהליך נמדד. אתה מקבל דוחות, תובנות, והוכחות בשטח — לא תחושות.",
+      image: "/images/itronot/4.avif",
     },
   ];
 
@@ -37,7 +37,7 @@ const FeaturesSection = () => {
                 מה מבדיל אותנו מהאחרים
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-2 text-center lg:text-right">
-                יותר מ־100 עסקים קטנים כבר הגדילו מכירות בעזרת Upsale מאז 2022 —
+                יותר מ40 עסקים קטנים כבר הגדילו מכירות בעזרת Upsale מאז 2022 —
                 כך אנחנו עושים את זה{" "}
               </p>
               <div className="text-center lg:text-right hidden lg:block">
@@ -66,7 +66,7 @@ const FeaturesSection = () => {
               >
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-right">
                   <div className="w-full relative">
-                    <Image
+                    <NextImage
                       src={card.image}
                       alt={card.title}
                       width={600}

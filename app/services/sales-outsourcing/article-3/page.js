@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import NextImage from "next/image";
 import Link from "next/link";
 import NewNavbar from "../../../components/NewNavbar";
 import FooterWithContact from "../../../components/FooterWithContact";
@@ -30,8 +30,8 @@ const Article3Page = () => {
       <div className="py-16 px-6 lg:px-24">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
-            <Image
-              src="/images/articles/3-1.avif"
+            <NextImage
+              src="/images/articles/sales/3.avif"
               alt="בחירת איש מכירות לעסק קטן"
               width={800}
               height={400}

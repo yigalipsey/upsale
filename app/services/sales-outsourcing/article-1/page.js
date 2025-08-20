@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import NextImage from "next/image";
 import Link from "next/link";
 import NewNavbar from "../../../components/NewNavbar";
 import FooterWithContact from "../../../components/FooterWithContact";
@@ -9,7 +9,7 @@ export const metadata = {
   title:
     "שירותי מכירות במיקור חוץ – הפתרון החכם לעסקים שרוצים למכור יותר ולהתעסק פחות | Upsale",
   description:
-    "בעל עסק קטן או בינוני? שירותי מכירות במיקור חוץ הם הפתרון החכם לעסקים שרוצים למכור יותר ולהתעסק פחות. מודל גמיש, תוצאות מוכחות, ואפס כאב ראש.",
+    "בעל עסק קטן  ? שירותי מכירות במיקור חוץ הם הפתרון החכם לעסקים שרוצים למכור יותר ולהתעסק פחות. מודל גמיש, תוצאות מוכחות, ואפס כאב ראש.",
 };
 
 const Article1Page = () => {
@@ -32,7 +32,7 @@ const Article1Page = () => {
       {/* תוכן המאמר */}
       <div className="py-16 px-6 lg:px-24">
         <div className="max-w-4xl mx-auto">
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none mb-8">
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               בעל עסק קטן או בינוני? אתה בטח מכיר את זה מקרוב. הטלפון מצלצל,
               לקוח מתעניין, אתה עונה, מסביר, מנסה לשכנע — ובסוף היום אתה מרגיש
@@ -46,7 +46,19 @@ const Article1Page = () => {
               אסטרטגיה. עסקים שמבינים את הערך של מיקור חוץ במכירות, מצליחים
               לייצר תוצאות בלי להעמיס על עצמם תהליכים, גיוסים, הכשרות וניהול.
             </p>
+          </div>
 
+          <div className="mb-8">
+            <NextImage
+              src="/images/articles/sales/1.avif"
+              alt="שירותי מכירות במיקור חוץ לעסקים קטנים ובינוניים"
+              width={800}
+              height={300}
+              className="w-full h-[300px] object-cover rounded-lg"
+            />
+          </div>
+
+          <div className="prose prose-lg max-w-none">
             <h2 className="text-2xl font-bold text-[#001c55] mb-4 mt-8">
               למה בכלל לשקול שירותי מכירות במיקור חוץ?
             </h2>
@@ -88,17 +100,6 @@ const Article1Page = () => {
               אנחנו לא מגיעים לבית העסק, לא מלמדים אותך איך למכור, ולא מבקשים
               ממך לנהל את התהליך. אנחנו פשוט מוכרים — ואתה רואה את ההכנסות
               גדלות.
-            </p>
-
-            <h2 className="text-2xl font-bold text-[#001c55] mb-4 mt-8">
-              תיאום פגישות לעסק – בלי כאב ראש
-            </h2>
-
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              אחד החסמים הגדולים אצל בעלי עסקים הוא תיאום פגישות. אתה מקבל ליד,
-              אבל לא תמיד יש לך זמן להתקשר, להסביר, לשכנע, ולתאם. שירותי
-              טלמיטינג לעסקים קטנים הם חלק בלתי נפרד מהמוקד שלנו — ואנחנו יודעים
-              איך להפוך שיחה קרה לפגישה חמה.
             </p>
 
             <h2 className="text-2xl font-bold text-[#001c55] mb-4 mt-8">

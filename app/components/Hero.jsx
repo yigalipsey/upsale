@@ -2,12 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { FiArrowLeft } from "react-icons/fi";
+import NextImage from "next/image";
 
 // ייבוא תמונות
-import heroImage from "../../public/images/hero.png";
-import heroImage2 from "../../public/images/hero2.png"; // תמונה למובייל
+import heroImage from "../../public/images/hero.avif";
+import heroImage2 from "../../public/images/hero2.avif"; // תמונה למובייל
 import dagesh from "../../public/images/dagesh.svg"; // ייבוא ה-SVG המותאם שלך
 
 const Hero = () => {
@@ -50,12 +49,13 @@ const Hero = () => {
                 }}
                 className="absolute left-0 px-4 bottom-[-10px]"
               >
-                <Image
+                <NextImage
                   className="mr-4"
                   src={dagesh}
                   alt="Dagesh"
                   width={120}
                   height={10}
+                  priority
                 />
               </motion.div>
             </span>
@@ -86,7 +86,7 @@ const Hero = () => {
 
         {/* תמונה עם אנימציה */}
         <motion.div className="w-full flex justify-center relative z-10">
-          <Image
+          <NextImage
             src={heroImage2}
             alt="Hero Image Mobile"
             width={200}
@@ -128,7 +128,7 @@ const Hero = () => {
                 }}
                 className="absolute left-0 right-0 bottom-[-10px]"
               >
-                <Image src={dagesh} alt="Dagesh" width={200} height={20} />
+                <NextImage src={dagesh} alt="Dagesh" width={200} height={20} />
               </motion.div>
             </span>
           </h1>
@@ -158,7 +158,7 @@ const Hero = () => {
 
         {/* תמונה */}
         <motion.div className="w-1/2 flex mt-12 justify-end items-end relative z-10 h-full">
-          <Image
+          <NextImage
             src={heroImage}
             alt="Hero Image Desktop"
             width={950}

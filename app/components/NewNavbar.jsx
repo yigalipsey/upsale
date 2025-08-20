@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
+import NextImage from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NewNavbar = () => {
@@ -101,12 +101,13 @@ const NewNavbar = () => {
         {/* לוגו במובייל - במרכז */}
         <div className="md:hidden absolute left-4 top-1/2 -translate-y-1/2 z-[9999] flex items-center justify-center">
           <Link href="/" className="flex-shrink-0">
-            <Image
+            <NextImage
               src="/images/smal-logo.avif"
               alt="Upsale Logo"
               width={120}
               height={40}
               className="h-10 w-auto"
+              priority
             />
           </Link>
         </div>
@@ -114,12 +115,13 @@ const NewNavbar = () => {
         <div className="flex pb-2 justify-between items-center h-14 md:h-16">
           {/* לוגו - בצד שמאל (דסקטופ בלבד) */}
           <Link href="/" className="flex-shrink-0 hidden md:block">
-            <Image
+            <NextImage
               src="/images/smal-logo.avif"
               alt="Upsale Logo"
               width={120}
               height={40}
               className="h-8 w-auto"
+              priority
             />
           </Link>
 

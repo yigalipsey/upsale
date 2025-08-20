@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import NextImage from "next/image";
 import Link from "next/link";
 import NewNavbar from "../../components/NewNavbar";
 import CallToAction from "../../components/CallToAction";
@@ -205,7 +205,7 @@ const TelemarketingPage = () => {
                 className="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="mb-4">
-                  <Image
+                  <NextImage
                     src={article.image}
                     alt={article.title}
                     width={400}
