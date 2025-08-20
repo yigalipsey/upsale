@@ -27,7 +27,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20  bg-[#E9EAEC] px-6 lg:px-24 font-rubik ">
+    <section className="py-20  bg-blue-50 px-6 lg:px-24 font-rubik ">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* צד ימין - כותרת עם sticky */}

@@ -6,7 +6,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import AboutUs from "./components/AboutUs";
 import StatsSection from "./components/StatsSection";
 import FeaturesSection from "./components/FeaturesSection";
-import ArticlesSection from "./components/ArticlesSection";
+import ServicesSection from "./components/ServicesSection";
 import CallToAction from "./components/CallToAction";
 import FaqSection from "./components/FaqSection";
 import FooterWithContact from "./components/FooterWithContact";
@@ -45,7 +45,7 @@ export default function Home() {
       <WhyChooseUs />
       <FeaturesSection />
       <AboutOutsourcing />
-      <ArticlesSection />
+      <ServicesSection />
       <CallToAction />
       <FaqSection />
       <FooterWithContact />

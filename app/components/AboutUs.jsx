@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <section
       id="about"
-      className="flex flex-col lg:flex-row  anchor items-center bg-gray-100 rounded-lg shadow-lg overflow-hidden my-8 mx-auto w-5/6 font-rubik text-right"
+      className="flex flex-col lg:flex-row  anchor items-center bg-blue-50 rounded-lg shadow-lg overflow-hidden my-8 mx-auto w-5/6 font-rubik text-right"
     >
       <div className="lg:w-1/2 p-6 flex flex-col justify-center">
         <h2 className="text-xl lg:text-3xl text-[#001c55] font-bold mb-3">

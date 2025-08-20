@@ -1,0 +1,219 @@
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import NewNavbar from "../../components/NewNavbar";
+import CallToAction from "../../components/CallToAction";
+import FooterWithContact from "../../components/FooterWithContact";
+import Pattern from "../../components/Pattern";
+
+export const metadata = {
+  title: "שירותי מכירות במיקור חוץ | Upsale",
+  description:
+    "צוותי מכירה מקצועיים עם ניסיון של מעל 10 שנים, מתמחים במכירות B2B ו-B2C לעסקים קטנים ובינוניים",
+};
+
+const SalesOutsourcingPage = () => {
+  const advantages = [
+    {
+      icon: "🎯",
+      title: "צוותי מכירה מקצועיים",
+      description:
+        "אנשי מכירות עם מעל 10 שנות ניסיון, מתמחים במכירות B2B ו-B2C לעסקים קטנים ובינוניים",
+    },
+    {
+      icon: "⚡",
+      title: "מודל גמיש - בנק שעות",
+      description:
+        "אין התחייבות למשרה מלאה. אתה רוכש שעות לפי הצורך שלך ומתחיל בקטן",
+    },
+    {
+      icon: "📈",
+      title: "תוצאות מוכחות תוך חודשיים",
+      description:
+        "הלקוחות שלנו מדווחים על עלייה של 25% במכירות בממוצע תוך 3 חודשים",
+    },
+    {
+      icon: "🔄",
+      title: "צמיחה הדרגתית",
+      description:
+        "מתחילים עם חצי משרה ובונים יחד את ההיקף לפי הביצועים והתוצאות",
+    },
+  ];
+
+  const articles = [
+    {
+      title: "למה עסקים קטנים צריכים מוקד מכירות חיצוני — ולא עוד כאב ראש",
+      description:
+        "כל עסק שרוצה לגדול חייב להבין: מכירות הן מנוע הצמיחה המרכזי. מוקד מכירות חיצוני מאפשר לך להתמקד בניהול ופיתוח העסק, בזמן שאנשי מכירות מקצועיים מטפלים בתהליך המכירה מההתחלה ועד הסגירה.",
+      image: "/images/articles/1-2.avif",
+      content: `
+        <p>כל עסק שרוצה לגדול חייב להבין דבר אחד: מכירות הן לא "משהו שצריך לעשות" — הן מנוע הצמיחה המרכזי. אבל האם כל בעל עסק צריך להיות גם איש מכירות? ממש לא.</p>
+        
+        <p>מוקד מכירות חיצוני מאפשר לך להתמקד בניהול ופיתוח העסק, בזמן שאנשי מכירות מקצועיים מטפלים בתהליך המכירה מההתחלה ועד הסגירה.</p>
+        
+        <h3>איך תדע שהגיע הזמן לשירותי מכירות במיקור חוץ?</h3>
+        <p>אם אתה שואל את עצמך:</p>
+        <ul>
+          <li>למה אני לא מצליח לסגור עסקאות למרות שיש לידים?</li>
+          <li>כמה זמן אני מבזבז על שיחות שלא מובילות לתוצאה?</li>
+          <li>האם אני באמת יודע איך לנהל תהליך מכירה אפקטיבי?</li>
+        </ul>
+        <p>כנראה שהגיע הזמן לשקול איש מכירות במיקור חוץ.</p>
+      `,
+      keywords: [
+        "מוקד מכירות חיצוני",
+        "שירותי מכירות לעסקים קטנים",
+        "מיקור חוץ מכירות",
+      ],
+    },
+    {
+      title: "הפתרון לעסקים קטנים: גמישות, תוצאות, אפס התעסקות",
+      description:
+        "עסק קטן לא צריך להחזיק מחלקת מכירות מלאה. אנחנו מציעים מודל גמיש שבו אתה רוכש בנק שעות של איש מכירות לפי הצורך שלך. מתחילים עם חצי משרה ובונים יחד את ההיקף לפי הביצועים.",
+      image: "/images/articles/2-1.avif",
+      content: `
+        <p>עסק קטן לא צריך להחזיק מחלקת מכירות מלאה. ב־Upsale אנחנו מציעים מודל גמיש שבו אתה רוכש בנק שעות של איש מכירות לפי הצורך שלך. זה אומר:</p>
+        
+        <ul>
+          <li>אין התחייבות למשרה מלאה</li>
+          <li>אין עלויות נלוות כמו שכר, ביטוח, הכשרות</li>
+          <li>כן יש תוצאות: יותר פגישות, יותר עסקאות, יותר הכנסות</li>
+        </ul>
+        
+        <p>אנחנו מתחילים עם חצי משרה, ובונים יחד איתך את ההיקף לפי הביצועים. כך אתה שומר על שליטה תקציבית — ומקבל תוצאות אמיתיות.</p>
+        
+        <h3>למה זה משתלם?</h3>
+        <p>במקום לנסות "ללמוד תוך כדי תנועה", אתה מקבל מישהו שזה כל מה שהוא עושה — מדבר עם לקוחות, מתמודד עם התנגדויות, וסוגר עסקאות.</p>
+      `,
+      keywords: [
+        "בנק שעות מכירות",
+        "מודל גמיש מכירות",
+        "שירותי מכירות לעסקים קטנים",
+      ],
+    },
+    {
+      title: "איך בוחרים את איש המכירות הנכון לעסק שלך",
+      description:
+        "גיוס איש מכירות לעסק קטן הוא לא רק עניין של ניסיון — אלא של התאמה. הפרמטרים שחשוב לבדוק: יכולת הקשבה, הבנה עמוקה של השירות שלך, גישה אנושית ויצירתיות בהתמודדות עם התנגדויות.",
+      image: "/images/articles/3-1.avif",
+      content: `
+        <p>גיוס איש מכירות לעסק קטן הוא לא רק עניין של ניסיון — אלא של התאמה. הפרמטרים שחשוב לבדוק:</p>
+        
+        <ul>
+          <li><strong>יכולת הקשבה וראיון לקוח</strong> - הבנה עמוקה של הצרכים</li>
+          <li><strong>הבנה עמוקה של השירות שלך</strong> - לא רק תסריט שיחה</li>
+          <li><strong>גישה אנושית</strong> - ולא תסריט שיחה מדוקלם</li>
+          <li><strong>יצירתיות בהתמודדות עם התנגדויות</strong> - פתרונות יצירתיים</li>
+          <li><strong>חתירה למגע וסגירת עסקאות</strong> - בזמן אמת</li>
+        </ul>
+        
+        <p>אנחנו ממליצים להתחיל בתקופת ניסיון קצרה, לראות תוצאות, ורק אז להרחיב את ההתקשרות.</p>
+        
+        <h3>איפה מוצאים אנשי מכירות במיקור חוץ?</h3>
+        <p>קהילות פייסבוק של בעלי עסקים ויזמים, לינקדאין, גוגל, או פשוט לפנות אלינו — אנחנו כאן בשבילך.</p>
+      `,
+      keywords: [
+        "גיוס איש מכירות",
+        "איש מכירות במיקור חוץ",
+        "בחירת איש מכירות לעסק קטן",
+      ],
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-white">
+      <NewNavbar />
+
+      {/* כותרת הדף */}
+      <div className="relative text-white py-16 px-6 lg:px-24 overflow-hidden">
+        <Pattern />
+        <div className="relative z-10 max-w-7xl mx-auto text-center">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            שירותי מכירות במיקור חוץ
+          </h1>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            צוותי מכירה מקצועיים עם ניסיון של מעל 10 שנים, מתמחים במכירות B2B
+            ו-B2C לעסקים קטנים ובינוניים
+          </p>
+          <div className="mt-8">
+            <Link
+              href="/"
+              className="inline-flex items-center px-6 py-3 bg-white text-[#001c55] font-medium rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            >
+              ← חזרה לדף הבית
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* תוכן המאמרים */}
+      <div className="py-16 px-6 lg:px-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {articles.map((article, index) => (
+              <article
+                key={index}
+                className="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col"
+              >
+                <div className="mb-4">
+                  <Image
+                    src={article.image}
+                    alt={article.title}
+                    width={400}
+                    height={200}
+                    className="w-full h-[200px] object-cover rounded-lg"
+                  />
+                </div>
+
+                <h3 className="text-lg font-bold text-[#001c55] mb-3 leading-relaxed">
+                  {article.title}
+                </h3>
+
+                <p className="text-sm text-gray-600 mb-4 leading-relaxed flex-grow">
+                  {article.description}
+                </p>
+
+                <div className="mt-auto">
+                  <Link
+                    href={`/services/sales-outsourcing/article-${index + 1}`}
+                    className="w-full inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-[#092274] rounded-lg hover:bg-[#001c55] transition-colors duration-200"
+                  >
+                    קרא עוד
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <CallToAction />
+
+      {/* היתרונות של השירות */}
+      <div className="py-16 px-6 lg:px-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {advantages.map((advantage, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+              >
+                <div className="text-4xl mb-4">{advantage.icon}</div>
+                <h3 className="text-xl font-bold text-[#001c55] mb-3">
+                  {advantage.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {advantage.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <FooterWithContact />
+    </div>
+  );
+};
+
+export default SalesOutsourcingPage;

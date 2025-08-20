@@ -1,12 +1,11 @@
+# *
 User-agent: *
 Allow: /
+Disallow: /admin/*
+Disallow: /api/*
 
-# Disallow admin and API routes
-Disallow: /admin/
-Disallow: /api/
+# Host
+Host: https://smartsales.co.il
 
-# Sitemap
+# Sitemaps
 Sitemap: https://smartsales.co.il/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 1
