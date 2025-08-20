@@ -1,17 +1,25 @@
 "use client";
 import React from "react";
 import Loader from "./Loader";
+import CenteredRadialPattern from "./CenteredPattern";
 
 const CallToAction = () => {
   return (
-    <section className="relative w-[90%] md:w-[70%] lg:w-[50%] mx-auto my-10 bg-[#092274] text-white rounded-xl h-[300px] overflow-hidden">
-      <Loader />
+    <section className="relative w-[90%] md:w-[70%] lg:w-[50%] mx-auto my-10 bg-[#092274] md:bg-[#092274] text-white rounded-xl h-[300px] overflow-hidden">
+      {/* רקע במובייל - CenteredRadialPattern, בדסקטופ - Loader */}
+      <div className="block md:hidden">
+        <CenteredRadialPattern />
+      </div>
+      <div className="hidden md:block">
+        <Loader />
+      </div>
       <div className="absolute top-1/2 right-10 md:right-10 left-10 md:left-auto transform -translate-y-1/2 z-10 max-w-[600px] text-center md:text-right">
-        <h2 className="text-[2.5rem] font-bold mb-2">בואו ניצור קשר</h2>
-        <p className="text-[1.2rem] mb-4">
+        <h2 className="text-[2.5rem] font-bold mb-2 text-white">
+          בואו ניצור קשר
+        </h2>
+        <p className="text-[1.2rem] mb-4 leading-tight text-white">
           רוצים לראות תוצאות
           <br className="block lg:hidden" />
-          <span className="block lg:inline"> </span>
           <span className="block lg:inline">כבר מהחודש הראשון?</span>
           <br className="block lg:hidden" />
           <br className="hidden lg:block" />

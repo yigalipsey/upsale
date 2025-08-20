@@ -36,13 +36,11 @@ const AboutOutsourcing = () => {
 
         {/* תמונה */}
         <div className="lg:w-1/2 flex justify-center lg:justify-end">
-          <NextImage
+          <img
             src="/images/344.svg"
-            alt="צוות מיקור חוץ מקצועי - Smart Sales"
-            width={400}
-            height={300}
+            alt="צוות מיקור חוץ מקצועי - Upsale"
             className="w-[80%] rounded-2xl"
-            priority
+            loading="lazy"
           />
         </div>
       </div>

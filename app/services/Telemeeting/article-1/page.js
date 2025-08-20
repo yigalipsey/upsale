@@ -49,7 +49,7 @@ const Article1Page = () => {
 
           <div className="mb-8">
             <NextImage
-              src="/images/articles/1-2.avif"
+              src="/images/articles/telemeeting/1.avif"
               alt="טלמיטינג לעסקים קטנים - תיאום פגישות מקצועי"
               width={800}
               height={300}

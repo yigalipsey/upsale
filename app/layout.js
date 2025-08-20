@@ -57,7 +57,7 @@ export const metadata = {
       "הרחיבו את צוות המכירות שלכם עם מיקור חוץ איכותי! אנו מספקים צוותי מכירות מקצועיים עם ניהול צמוד, תסריטי שיחה מותאמים אישית וסדנאות מכירה קבועות.",
     images: [
       {
-        url: "/images/hero.png",
+        url: "/images/hero.avif",
         width: 1200,
         height: 630,
         alt: "Upsale - מיקור חוץ מכירות",
@@ -68,21 +68,14 @@ export const metadata = {
     card: "summary_large_image",
     title: "Upsale | המומחים במכירות במיקור חוץ",
     description: "הרחיבו את צוות המכירות שלכם עם מיקור חוץ איכותי!",
-    images: ["/images/hero.png"],
+    images: ["/images/hero.avif"],
     creator: "@upsale", // החלף עם הטוויטר האמיתי שלך
   },
   alternates: {
     canonical: "https://upsale.co.il", // החלף עם הדומיין האמיתי שלך
   },
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-    ],
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
   },
   manifest: "/site.webmanifest",
   verification: {

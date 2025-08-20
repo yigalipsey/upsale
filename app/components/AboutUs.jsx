@@ -10,9 +10,9 @@ const AboutUs = () => {
       className="flex flex-col lg:flex-row  anchor items-center bg-blue-50 rounded-lg shadow-lg overflow-hidden my-8 mx-auto w-5/6 font-rubik text-right"
     >
       <div className="lg:w-1/2 p-6 flex flex-col justify-center">
-        <h2 className="text-xl lg:text-3xl text-[#001c55] font-bold mb-3">
+        <h1 className="text-xl lg:text-3xl text-[#001c55] font-bold mb-3">
           מי אנחנו?
-        </h2>
+        </h1>
         <p className="text-sm lg:text-base text-gray-600 leading-relaxed mb-2">
           ב-<span className="font-bold text-[#001c55]">Upsale</span> אנחנו
           מתמחים בהגדלת מכירות לעסקים קטנים ובינוניים באמצעות שירותי תיאום
@@ -59,7 +59,7 @@ const AboutUs = () => {
       {/* תמונה */}
       <div className=" lg:w-[48%] lg:h-full -mt-4 ">
         <NextImage
-          src="/images/aboutus.png"
+          src="/images/aboutus.avif"
           alt="צוות Upsale - מומחי מכירות במיקור חוץ"
           width={600}
           height={400}

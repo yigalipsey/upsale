@@ -27,28 +27,29 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20  bg-blue-50 px-6 lg:px-24 font-rubik ">
+    <section className="py-20   px-6 lg:px-24 font-rubik ">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* צד ימין - כותרת עם sticky */}
           <div className="relative">
             <div className="lg:sticky  lg:top-72">
-              <h3 className="text-3xl lg:text-4xl font-bold text-[#092274] mb-2 text-center lg:text-right">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#092274] mb-2 text-center lg:text-right">
                 מה מבדיל אותנו מהאחרים
-              </h3>
+              </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-2 text-center lg:text-right">
                 יותר מ40 עסקים קטנים כבר הגדילו מכירות בעזרת Upsale מאז 2022 —
                 כך אנחנו עושים את זה{" "}
               </p>
               <div className="text-center lg:text-right hidden lg:block">
-                <motion.button
+                <motion.a
+                  href="#contact"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center justify-center px-8 py-4 font-bold text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-[#092274] text-white hover:bg-[#001c55]"
-                  aria-label="קבל הצעת מחיר"
+                  aria-label="צור קשר"
                 >
-                  קבל הצעת מחיר
-                </motion.button>
+                  בוא נתחיל
+                </motion.a>
               </div>
             </div>
           </div>
@@ -71,7 +72,7 @@ const FeaturesSection = () => {
                       alt={card.title}
                       width={600}
                       height={400}
-                      className="w-[calc(100%-10px)] mx-[5px] mt-[5px] h-auto object-contain rounded-xl"
+                      className="w-[calc(100%-10px)] mx-[5px] mt-[5px] h-auto  object-contain rounded-xl"
                     />
                   </div>
                   <div className="p-6">

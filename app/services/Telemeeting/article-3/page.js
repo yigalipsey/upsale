@@ -52,7 +52,7 @@ const Article3Page = () => {
 
           <div className="mb-8">
             <NextImage
-              src="/images/articles/3-1.avif"
+              src="/images/articles/telemeeting/3.avif"
               alt="תיאום פגישות מקצועי - תדמית עסקית מנצחת"
               width={800}
               height={300}

@@ -9,15 +9,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const NewNavbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     setIsMenuOpen(false);
@@ -49,17 +40,13 @@ const NewNavbar = () => {
     { href: "/", label: "בית" },
     { href: "#about", label: "אודות" },
     { href: "#services", label: "שירותים" },
-    { href: "#articles", label: "מאמרים" },
+    { href: "#faq", label: "שאלות נפוצות" },
     { href: "#contact", label: "צור קשר" },
   ];
 
   return (
     <nav
-      className={`fixed left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled
-          ? "top-0 bg-white border-b border-[#092274]"
-          : "top-5 md:top-5 top-2 bg-transparent"
-      }`}
+      className="fixed left-0 right-0 z-40 top-0 bg-white/90 backdrop-blur-sm border-b border-[#092274]/20 transition-all duration-300"
       role="navigation"
       aria-label="ניווט ראשי"
     >
@@ -134,6 +121,7 @@ const NewNavbar = () => {
                     key={item.href}
                     onClick={() => handleSmoothScroll(item.href)}
                     className="text-base font-medium transition-colors hover:text-[#001c55] text-[#092274]"
+                    aria-label={`ניווט ל${item.label}`}
                   >
                     {item.label}
                   </button>
@@ -141,9 +129,7 @@ const NewNavbar = () => {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`text-base font-medium transition-colors hover:text-[#001c55] ${
-                      pathname === item.href ? "text-white" : "text-[#092274]"
-                    }`}
+                    className="text-base font-medium transition-colors hover:text-[#001c55] text-[#092274]"
                   >
                     {item.label}
                   </Link>
@@ -221,6 +207,7 @@ const NewNavbar = () => {
                           setIsMenuOpen(false);
                         }}
                         className="flex items-center justify-center w-full px-6 py-4 text-lg font-medium text-[#092274] transition-colors border-b-2 border-[#092274]/20 hover:text-[#001c55]"
+                        aria-label={`ניווט ל${item.label}`}
                       >
                         <span>{item.label}</span>
                       </button>
