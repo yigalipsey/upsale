@@ -7,21 +7,21 @@ import { motion } from "framer-motion";
 
 const ThankYouPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#092274] via-[#001c55] to-[#092274] flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gradient-to-br from-[#092274] via-[#001c55] to-[#092274] flex items-center justify-center p-6 -mt-20 md:-mt-24 pt-20 md:pt-24">
       <div className="max-w-2xl mx-auto text-center">
         {/* אנימציה של הלוגו */}
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mb-8"
+          className="mb-8 -mt-8 md:-mt-12"
         >
           <NextImage
             src="/images/smal-logo.avif"
             alt="Upsale Logo"
             width={200}
             height={80}
-            className="mx-auto"
+            className="mx-auto w-32 h-auto md:w-40"
             priority
           />
         </motion.div>
@@ -62,31 +62,21 @@ const ThankYouPage = () => {
             <p className="text-lg">
               <span className="font-bold">אימייל:</span> office@upsaleil.com
             </p>
-            <p className="text-lg">
-              <span className="font-bold">שעות פעילות:</span> א'-ה' 9:00-18:00
-            </p>
           </div>
         </motion.div>
 
-        {/* כפתורים */}
+        {/* כפתור */}
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex justify-center"
         >
           <Link
             href="/"
             className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#FFC107] to-[#FFD54F] text-[#001c55] font-bold rounded-xl text-lg hover:from-[#FFD54F] hover:to-[#FFC107] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             חזרה לדף הבית
-          </Link>
-
-          <Link
-            href="#contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl text-lg hover:bg-white hover:text-[#001c55] transition-all duration-300"
-          >
-            יצירת קשר נוסף
           </Link>
         </motion.div>
 

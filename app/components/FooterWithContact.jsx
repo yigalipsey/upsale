@@ -26,10 +26,7 @@ const FooterWithContact = () => {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center">
           <div className="lg:w-1/2 mt-[-140px] w-full border border-[#092274] border-[5px] bg-white text-[#092274] rounded-lg shadow-lg p-6 lg:relative">
             <div className="text-center py-8">
-              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#092274] mx-auto mb-4"></div>
-              <h2 className="text-2xl lg:text-3xl font-bold mb-5 text-[#092274]">
-                מעביר אותך לדף התודה...
-              </h2>
+              <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#092274] mx-auto"></div>
             </div>
           </div>
 
