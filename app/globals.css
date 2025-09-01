@@ -28,3 +28,14 @@ body {
 * {
   font-family: var(--font-rubik), Arial, Helvetica, sans-serif;
 }
+
+/* תיקון anchor links לניווט מדויק */
+html {
+  scroll-padding-top: 120px; /* מתאים לגובה ה-navbar + מרווח נוסף */
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 140px; /* בדסקטופ ה-navbar גבוה יותר */
+  }
+}

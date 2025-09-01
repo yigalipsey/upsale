@@ -25,7 +25,8 @@ const NewNavbar = () => {
     if (href.startsWith("#")) {
       const element = document.getElementById(href.substring(1));
       if (element) {
-        const navHeight = 80;
+        // גובה ה-navbar + מרווח נוסף לניווט מדויק
+        const navHeight = window.innerWidth >= 768 ? 120 : 100;
         const elementPosition = element.offsetTop - navHeight;
         window.scrollTo({
           top: elementPosition,

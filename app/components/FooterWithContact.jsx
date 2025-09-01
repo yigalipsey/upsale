@@ -3,10 +3,19 @@
 import React from "react";
 import NextImage from "next/image";
 import { useForm, ValidationError } from "@formspree/react";
+import { useRouter } from "next/navigation";
 import Logo from "../../public/images/upsale-logo-withname.avif";
 
 const FooterWithContact = () => {
   const [state, handleSubmit] = useForm("mrballpk");
+  const router = useRouter();
+
+  // אם הטופס נשלח בהצלחה, עבור לדף התודה
+  React.useEffect(() => {
+    if (state.succeeded) {
+      router.push("/thank-you");
+    }
+  }, [state.succeeded, router]);
 
   if (state.succeeded) {
     return (
@@ -17,12 +26,10 @@ const FooterWithContact = () => {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center">
           <div className="lg:w-1/2 mt-[-140px] w-full border border-[#092274] border-[5px] bg-white text-[#092274] rounded-lg shadow-lg p-6 lg:relative">
             <div className="text-center py-8">
-              <h2 className="text-2xl lg:text-3xl font-bold mb-5 text-green-600">
-                תודה על פנייתך!
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#092274] mx-auto mb-4"></div>
+              <h2 className="text-2xl lg:text-3xl font-bold mb-5 text-[#092274]">
+                מעביר אותך לדף התודה...
               </h2>
-              <p className="text-lg text-gray-700">
-                ההודעה נשלחה בהצלחה! ניצור איתך קשר בקרוב.
-              </p>
             </div>
           </div>
 
@@ -181,8 +188,8 @@ const FooterWithContact = () => {
               priority
             />
             <p className="text-sm mt-10 ">
-              המומחים שלנו כאן כדי לעזור לכם להרחיב את העסק שלכם בצורה מקצועית
-              ובטוחה.
+              תן לנו לקחת את המכירות שלך קדימה — עם תהליך מוכח, צוותים מנוסים,
+              ותשוקה להצלחה
             </p>
           </div>
           <div className="flex flex-col lg:flex-row gap-6 justify-center lg:justify-start">

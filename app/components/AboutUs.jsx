@@ -28,8 +28,13 @@ const AboutUs = () => {
           תסריטי שיחה מדויקים וניהול שוטף שמביא תוצאות.
         </p>
         <p className="text-sm border-b border-b-1 pb-4 border-b-black lg:text-base text-gray-700 leading-relaxed">
-          רוצים לראות איך זה עובד אצלכם? השאירו פרטים ונחזור אליכם עם הצעה
-          שמותאמת בדיוק לעסק שלכם.
+          רוצים לראות איך זה עובד אצלכם?{" "}
+          <a
+            href="#contact"
+            className="text-[#092274] font-bold hover:text-[#001c55] underline hover:no-underline transition-colors duration-300"
+          >
+            השאירו פרטים ונחזור אליכם עם הצעה שמותאמת בדיוק לעסק שלכם.
+          </a>
         </p>
 
         {/* כרטיס קטן */}

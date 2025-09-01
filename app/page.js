@@ -42,10 +42,11 @@ export default function Home() {
       <NewNavbar />
       <Hero />
       <AboutUs />
+      <ServicesSection />
       <WhyChooseUs />
       <FeaturesSection />
       <AboutOutsourcing />
-      <ServicesSection />
+
       <CallToAction />
       <FaqSection />
       <FooterWithContact />
