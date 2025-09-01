@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin/*
+Disallow: /api/*
+
+# Host
+Host: https://upsaleil.com
+
+# Sitemaps
+Sitemap: https://upsaleil.com/sitemap.xml
