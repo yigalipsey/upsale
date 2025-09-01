@@ -3,7 +3,7 @@
 import React from "react";
 import NextImage from "next/image";
 import { useForm, ValidationError } from "@formspree/react";
-import Logo from "../../public/images/smal-logo.avif";
+import Logo from "../../public/images/upsale-logo-withname.avif";
 
 const FooterWithContact = () => {
   const [state, handleSubmit] = useForm("mrballpk");
@@ -31,10 +31,10 @@ const FooterWithContact = () => {
             <div>
               <NextImage
                 src={Logo}
-                alt="Smart Sales Logo"
-                width={60}
-                height={60}
-                className="mx-auto text-white lg:mx-0"
+                alt="Upsale Logo"
+                width={120}
+                height={40}
+                className="mx-auto text-white lg:mx-0 lg:mt-4"
                 priority
               />
               <p className="text-sm mt-10 ">
@@ -174,10 +174,10 @@ const FooterWithContact = () => {
           <div>
             <NextImage
               src={Logo}
-              alt="Smart Sales Logo"
-              width={60}
-              height={60}
-              className="mx-auto text-white lg:mx-0"
+              alt="Upsale Logo"
+              width={120}
+              height={40}
+              className="mx-auto text-white lg:mx-0 lg:mt-4"
               priority
             />
             <p className="text-sm mt-10 ">

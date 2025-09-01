@@ -88,7 +88,10 @@ const NewNavbar = () => {
 
         {/* לוגו במובייל - במרכז */}
         <div className="md:hidden absolute left-4 top-1/2 -translate-y-1/2 z-[9999] flex items-center justify-center">
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0 flex items-center gap-2">
+            <span className="text-[#092274] font-bold text-lg whitespace-nowrap font-sans">
+              UPSALE
+            </span>
             <NextImage
               src="/images/smal-logo.avif"
               alt="Upsale Logo"
@@ -102,7 +105,13 @@ const NewNavbar = () => {
 
         <div className="flex pb-2 justify-between items-center h-14 md:h-16">
           {/* לוגו - בצד שמאל (דסקטופ בלבד) */}
-          <Link href="/" className="flex-shrink-0 hidden md:block">
+          <Link
+            href="/"
+            className="flex-shrink-0 hidden md:flex items-center gap-2"
+          >
+            <span className="text-[#092274] font-bold text-xl whitespace-nowrap font-sans">
+              UPSALE
+            </span>
             <NextImage
               src="/images/smal-logo.avif"
               alt="Upsale Logo"

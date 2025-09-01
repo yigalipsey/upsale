@@ -17,9 +17,8 @@ const CallToAction = () => {
         <h2 className="text-[2.5rem] font-bold mb-2 text-white">
           בואו ניצור קשר
         </h2>
-        <p className="text-[1.2rem] mb-4 leading-tight text-white">
-          רוצים לראות תוצאות
-          <br className="block lg:hidden" />
+        <p className="text-[1.2rem]  lg:text-[1.2rem] mb-4 leading-tight text-white">
+          רוצים לראות תוצאות{" "}
           <span className="block lg:inline">כבר מהחודש הראשון?</span>
           <br className="block lg:hidden" />
           <br className="hidden lg:block" />
