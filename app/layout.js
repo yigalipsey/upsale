@@ -17,7 +17,7 @@ export const metadata = {
     template: "%s | Upsale",
   },
   description:
-    "הרחיבו את צוות המכירות שלכם עם מיקור חוץ איכותי! אנו מספקים צוותי מכירות מקצועיים עם ניהול צמוד, תסריטי שיחה מותאמים אישית וסדנאות מכירה קבועות. חיסכו זמן, כסף ומשאבים – ותנו לנו לדאוג להצלחה שלכם.",
+    "Upsale - שירותי מכירה חכמים לעסקים קטנים. הגדלת מכירות, תהליכים מותאמים אישית, ודוחות מדידים.",
   keywords: [
     "מיקור חוץ מכירות",
     "צוות מכירות חיצוני",
@@ -62,20 +62,32 @@ export const metadata = {
         height: 630,
         alt: "Upsale - מיקור חוץ מכירות",
       },
+      {
+        url: "/images/smal-logo.avif",
+        width: 120,
+        height: 40,
+        alt: "Upsale Logo",
+      },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Upsale | המומחים במכירות במיקור חוץ",
     description: "הרחיבו את צוות המכירות שלכם עם מיקור חוץ איכותי!",
-    images: ["/images/hero.avif"],
+    images: ["/images/hero.avif", "/images/smal-logo.avif"],
     creator: "@upsale",
   },
   alternates: {
     canonical: "https://upsale.co.il",
   },
   icons: {
-    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/smal-logo.avif", sizes: "32x32", type: "image/avif" },
+      { url: "/images/smal-logo.avif", sizes: "16x16", type: "image/avif" },
+    ],
+    shortcut: "/images/smal-logo.avif",
+    apple: "/images/smal-logo.avif",
   },
   manifest: "/site.webmanifest",
   verification: {
