@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Rubik } from "next/font/google";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const rubik = Rubik({
   subsets: ["hebrew", "latin"],
@@ -101,7 +102,10 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
       </head>
-      <body className={`antialiased ${rubik.className}`}>{children}</body>
+      <body className={`antialiased ${rubik.className}`}>
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   );
 }

@@ -3,11 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import NextImage from "next/image";
+import DageshIcon from "./DageshIcon";
 
 // ייבוא תמונות
 import heroImage from "../../public/images/hero.avif";
 import heroImage2 from "../../public/images/hero2.avif"; // תמונה למובייל
-import dagesh from "../../public/images/dagesh.svg"; // ייבוא ה-SVG המותאם שלך
 
 const Hero = () => {
   return (
@@ -49,14 +49,7 @@ const Hero = () => {
                 }}
                 className="absolute left-0 px-4 bottom-[-10px]"
               >
-                <NextImage
-                  className="mr-4"
-                  src={dagesh}
-                  alt="Dagesh"
-                  width={120}
-                  height={10}
-                  priority
-                />
+                <DageshIcon className="mr-4" width={120} height={10} />
               </motion.div>
             </span>
           </h1>
@@ -127,7 +120,7 @@ const Hero = () => {
                 }}
                 className="absolute left-0 right-0 bottom-[-10px]"
               >
-                <NextImage src={dagesh} alt="Dagesh" width={200} height={20} />
+                <DageshIcon width={200} height={20} />
               </motion.div>
             </span>
           </h1>

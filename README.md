@@ -91,7 +91,7 @@ upsale/
 צור קובץ `.env.local` עם:
 
 ```env
-SITE_URL=https://smartsales.co.il
+SITE_URL=https://upsaleil.com
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
 
@@ -135,8 +135,8 @@ NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
 ## 📞 יצירת קשר
 
-- **אימייל**: Yoad@smartsalesil.com
-- **אתר**: https://smartsales.co.il
+- **אימייל**: office@upsaleil.com
+- **אתר**: https://upsaleil.com
 
 ---
 
