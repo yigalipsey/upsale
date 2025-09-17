@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import NextImage from "next/image";
 import DageshIcon from "./DageshIcon";
+import ScrollIndicator from "./ScrollIndicator";
 
 // ייבוא תמונות
 import heroImage from "../../public/images/hero.avif";
@@ -72,6 +73,11 @@ const Hero = () => {
           >
             לשיחת ייעוץ ומידע נוסף
           </a>
+
+          {/* אייקון גלילה - רק במובייל */}
+          <div className="lg:hidden">
+            <ScrollIndicator />
+          </div>
         </div>
 
         {/* תמונה עם אנימציה */}

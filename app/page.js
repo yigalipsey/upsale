@@ -10,7 +10,6 @@ import ServicesSection from "./components/ServicesSection";
 import CallToAction from "./components/CallToAction";
 import FaqSection from "./components/FaqSection";
 import FooterWithContact from "./components/FooterWithContact";
-import ScrollIndicator from "./components/ScrollIndicator";
 
 export const metadata = {
   title: "Upsale | המומחים במכירות במיקור חוץ",
@@ -51,7 +50,6 @@ export default function Home() {
       <CallToAction />
       <FaqSection />
       <FooterWithContact />
-      <ScrollIndicator />
     </div>
   );
 }

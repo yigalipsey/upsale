@@ -16,7 +16,7 @@ const ServicesSection = () => {
       description:
         "תיאום פגישות איכותיות עם לקוחות פוטנציאליים, בניית אמון וסגירת עסקאות בטלפון",
       image: "/images/articles/sales/1.avif",
-      link: "/services/telemeeting",
+      link: "/services/Telemeeting",
     },
   ];
 

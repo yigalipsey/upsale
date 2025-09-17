@@ -408,7 +408,7 @@ const Article2Page = () => {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Link
-                  href="/services/telemeeting/article-1"
+                  href="/services/Telemeeting/article-1"
                   className="block p-4 border rounded-lg hover:shadow-md transition"
                 >
                   <h4 className="font-bold text-[#001c55] mb-2">
@@ -419,7 +419,7 @@ const Article2Page = () => {
                   </p>
                 </Link>
                 <Link
-                  href="/services/telemeeting/article-3"
+                  href="/services/Telemeeting/article-3"
                   className="block p-4 border rounded-lg hover:shadow-md transition"
                 >
                   <h4 className="text-xl font-bold text-[#001c55] mb-2">
