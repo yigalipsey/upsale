@@ -15,7 +15,7 @@ const Hero = () => {
       {/* גרסת מובייל */}
       <section
         id="home"
-        className="bg-[#092274] w-5/6 mx-auto max-h-[580px] lg:hidden relative font-rubik flex flex-col rounded-xl h-screen px-0 py-0 overflow-hidden mt-5"
+        className="bg-[#092274] w-5/6 mx-auto max-h-[580px] lg:hidden relative font-rubik flex flex-col rounded-xl h-screen px-0 py-0 overflow-hidden -mt-2"
         style={{
           backgroundImage:
             "radial-gradient(at center center, #333652 0%, ##333652 33%, ##333652 66%, #333652 100%)",
