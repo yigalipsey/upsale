@@ -23,7 +23,7 @@ const Hero = () => {
           direction: "rtl",
         }}
       >
-        <div className="flex mb-12 order-2 flex-col w-full relative z-10 items-center text-center">
+        <div className="flex mb-6 order-2 flex-col w-full relative z-10 items-center text-center">
           {/* קיקר */}
           <p
             className="inline-block text-xs mb-3 font-light text-white border border-white rounded-full px-4 py-2"
