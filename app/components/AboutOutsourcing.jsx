@@ -8,7 +8,7 @@ const AboutOutsourcing = () => {
         {/* טקסט */}
         <div className="lg:w-1/2 flex flex-col text-right">
           <h2 className="text-3xl lg:text-2xl font-extrabold text-[#001c55] mb-3">
-            למה מיקור חוץ הוא הבחירה הנכונה לעסק שלך?
+            למה מיקור חוץ הוא הבחירה הנכונה לעסק שלך
           </h2>
           <p className="text-base text-gray-700 leading-relaxed mb-2">
             מכירות במיקור חוץ הן הפתרון האולטימטיבי לעסקים שמחפשים להגדיל את
