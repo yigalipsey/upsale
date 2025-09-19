@@ -7,7 +7,7 @@ const CenteredRadialPattern = () => {
         className="absolute inset-0"
         style={{
           backgroundColor: "#001c55",
-          opacity: 1,
+          opacity: 0.6,
           width: "100%",
           height: "100%",
           backgroundImage: `
@@ -18,8 +18,8 @@ const CenteredRadialPattern = () => {
               transparent 8px
             ),
             repeating-linear-gradient(
-              rgba(0, 44, 115, 0.2),
-              rgba(0, 28, 85, 0.1)
+              rgba(0, 44, 115, 0.15),
+              rgba(0, 28, 85, 0.08)
             )
           `,
         }}

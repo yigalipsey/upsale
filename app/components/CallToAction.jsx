@@ -7,7 +7,7 @@ const CallToAction = () => {
   return (
     <a
       href="#contact"
-      className="block relative w-[90%] md:w-[70%] lg:w-[50%] mx-auto my-10 bg-[#092274] md:bg-[#092274] text-white rounded-xl h-[300px] overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-102 hover:shadow-lg"
+      className="block relative w-[90%] md:w-[70%] lg:w-[50%] mx-auto my-10 bg-[#092274] md:bg-[#092274] text-white rounded-xl h-[250px] md:h-[300px] overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-102 hover:shadow-lg"
     >
       {/* רקע במובייל - CenteredRadialPattern, בדסקטופ - Loader */}
       <div className="block md:hidden">
@@ -17,14 +17,12 @@ const CallToAction = () => {
         <Loader />
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 max-w-[600px] text-center">
-        <h2 className="text-2xl md:text-[2.5rem] font-bold mb-2 text-white transition-all duration-300 group-hover:text-yellow-200">
+        <h2 className="text-3xl md:text-[2.5rem] font-bold mb-2 text-white transition-all duration-300 group-hover:text-yellow-200">
           דברו איתנו
         </h2>
-        <p className="text-base md:text-[1.2rem] mb-4 leading-tight text-white transition-all duration-300 group-hover:text-blue-100">
+        <p className="text-lg md:text-[1.2rem] mb-4 leading-tight text-white transition-all duration-300 group-hover:text-blue-100">
           רוצים לראות תוצאות{" "}
           <span className="block lg:inline">כבר מהחודש הראשון?</span>
-          <br className="block lg:hidden" />
-          <br className="hidden lg:block" />
           השאירו פרטים ונצא לדרך.
         </p>
         <div
