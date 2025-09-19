@@ -8,7 +8,7 @@ import ScrollIndicator from "./ScrollIndicator";
 
 // ייבוא תמונות
 import heroImage from "../../public/images/hero.avif";
-import heroImage2 from "../../public/images/hero2.avif"; // תמונה למובייל
+import heroImage2 from "../../public/images/hero-3.png"; // תמונה למובייל
 
 const Hero = () => {
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
       {/* גרסת מובייל */}
       <section
         id="home"
-        className="bg-[#092274] w-5/6 mx-auto max-h-[580px] lg:hidden relative font-rubik flex flex-col rounded-xl h-screen px-0 py-0 overflow-hidden -mt-2"
+        className="bg-[#092274] w-5/6 mx-auto lg:hidden relative font-rubik flex flex-col rounded-xl h-[70vh] px-0 py-0 overflow-hidden -mt-2"
         style={{
           backgroundImage:
             "radial-gradient(at center center, #333652 0%, ##333652 33%, ##333652 66%, #333652 100%)",
@@ -31,40 +31,36 @@ const Hero = () => {
               maxWidth: "fit-content",
             }}
           >
-            הדרך החכמה להגדיל מכירות
+            סוגרים לך עסקאות וקובעים לך פגישות!
           </p>
 
           {/* כותרת ראשית */}
-          <h1 className="text-2xl mb-3 font-bold text-white leading-tight relative">
-            <span>מוקד המכירות החיצוני</span>
+          <h1 className="text-2xl mb-3 font-bold text-white leading-tight relative w-[95%]">
+            <span>שירותי המכירות במיקור חוץ של Upsale</span>
             <br />
             <span className="relative">
-              שמביא תוצאות
-              <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: [1.2, 0.9, 1] }}
-                transition={{
-                  delay: 0.2,
-                  duration: 1.7,
-                  ease: "easeInOut",
-                }}
-                className="absolute left-0 px-4 bottom-[-10px]"
-              >
-                <DageshIcon className="mr-4" width={120} height={10} />
-              </motion.div>
+              <span className="relative">
+                מביאים תוצאות!
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: [1.2, 0.9, 1] }}
+                  transition={{
+                    delay: 0.2,
+                    duration: 1.7,
+                    ease: "easeInOut",
+                  }}
+                  className="absolute left-0 px-4 bottom-[-10px]"
+                >
+                  <DageshIcon className="mr-4" width={120} height={10} />
+                </motion.div>
+              </span>
             </span>
           </h1>
-
-          {/* כותרת משנית */}
-          <p className="text-sm mb-5 w-5/6 text-white font-light">
-            צוותי מכירות מקצועיים שמביאים פגישות וסוגרים עסקאות. אתם חוסכים זמן
-            ומשאבים – אנחנו מביאים תוצאות.
-          </p>
 
           {/* כפתור */}
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-6 py-3 font-bold rounded-lg shadow-lg hover:brightness-110 transition"
+            className="inline-flex items-center justify-center px-6 py-3 font-bold rounded-lg shadow-lg hover:brightness-110 transition mt-4"
             style={{
               background: "linear-gradient(to right, #FFC107, #FFD54F)",
               color: "#001c55",
@@ -73,11 +69,6 @@ const Hero = () => {
           >
             לשיחת ייעוץ ומידע נוסף
           </a>
-
-          {/* אייקון גלילה - רק במובייל */}
-          <div className="lg:hidden">
-            <ScrollIndicator />
-          </div>
         </div>
 
         {/* תמונה עם אנימציה */}
@@ -110,29 +101,29 @@ const Hero = () => {
           </p>
 
           {/* כותרת ראשית */}
-          <h1 className="text-4xl  mb-3 font-bold leading-tight relative">
-            <span className=" text-white">מוקד המכירות החיצוני</span>
-            <br />
-            <span className="relative  text-white">
-              שמביא תוצאות
-              <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: [1.2, 0.9, 1] }}
-                transition={{
-                  duration: 1.5,
-                  ease: "easeInOut",
-                }}
-                className="absolute left-0 right-0 bottom-[-10px]"
-              >
-                <DageshIcon width={200} height={20} />
-              </motion.div>
+          <h1 className="text-4xl  mb-3 font-bold leading-tight relative w-[95%]">
+            <span className="text-white">
+              שירותי המכירות במיקור חוץ של Upsale{" "}
+              <span className="relative">
+                מביאים תוצאות!
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: [1.2, 0.9, 1] }}
+                  transition={{
+                    duration: 1.5,
+                    ease: "easeInOut",
+                  }}
+                  className="absolute left-0 right-0 bottom-[-10px]"
+                >
+                  <DageshIcon width={200} height={20} />
+                </motion.div>
+              </span>
             </span>
           </h1>
 
           {/* כותרת משנית */}
           <p className="text-lg  text-white mb-5 font-light">
-            צוותי מכירות מקצועיים שמביאים פגישות וסוגרים עסקאות. אתם חוסכים זמן
-            ומשאבים – אנחנו מביאים תוצאות.
+            סוגרים לך עסקאות וקובעים לך פגישות!
           </p>
 
           {/* כפתור */}
