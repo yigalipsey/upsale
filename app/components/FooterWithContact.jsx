@@ -72,7 +72,18 @@ const FooterWithContact = () => {
                 ובטוחה.
               </p>
             </div>
-            <div className="flex flex-col lg:flex-row gap-6 justify-center lg:justify-center">
+            <div className="flex flex-col gap-6 justify-center">
+              <div>
+                <p className="font-bold">וואטסאפ:</p>
+                <a
+                  href="https://wa.me/972533350910"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white hover:text-yellow-300 transition-colors"
+                >
+                  053-335-0910
+                </a>
+              </div>
               <div>
                 <p className="font-bold">כתובת אימייל:</p>
                 <p className="text-sm">office@upsaleil.com</p>
@@ -248,7 +259,18 @@ const FooterWithContact = () => {
                 ותשוקה להצלחה
               </p>
             </div>
-            <div className="flex flex-col lg:flex-row gap-6 justify-center lg:justify-center">
+            <div className="flex flex-col gap-6 justify-center">
+              <div>
+                <p className="font-bold">וואטסאפ:</p>
+                <a
+                  href="https://wa.me/972533350910"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white hover:text-yellow-300 transition-colors"
+                >
+                  053-335-0910
+                </a>
+              </div>
               <div>
                 <p className="font-bold">כתובת אימייל:</p>
                 <p className="text-sm">office@upsaleil.com</p>

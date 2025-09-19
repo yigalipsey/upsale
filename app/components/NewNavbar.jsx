@@ -23,6 +23,12 @@ const NewNavbar = () => {
 
   const handleSmoothScroll = (href) => {
     if (href.startsWith("#")) {
+      // אם אנחנו לא בדף הבית, עבור לדף הבית עם הקישור
+      if (pathname !== "/") {
+        window.location.href = `/${href}`;
+        return;
+      }
+
       const element = document.getElementById(href.substring(1));
       if (element) {
         // גובה ה-navbar + מרווח נוסף לניווט מדויק
@@ -151,12 +157,12 @@ const NewNavbar = () => {
 
           {/* צד ימין - כפתור יצירת קשר */}
           <div className="hidden md:flex items-center space-x-3">
-            <Link
-              href="#contact"
+            <button
+              onClick={() => handleSmoothScroll("#contact")}
               className="inline-flex items-center justify-center px-4 py-2 font-medium text-[#092274] border border-[#092274] rounded-lg hover:bg-[#092274] hover:text-white transition-all duration-200"
             >
               צור קשר
-            </Link>
+            </button>
           </div>
         </div>
 
