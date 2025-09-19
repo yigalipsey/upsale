@@ -17,10 +17,10 @@ const CallToAction = () => {
         <Loader />
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 max-w-[600px] text-center">
-        <h2 className="text-[2.5rem] font-bold mb-2 text-white transition-all duration-300 group-hover:text-yellow-200">
-          דברו איתנו{" "}
+        <h2 className="text-2xl md:text-[2.5rem] font-bold mb-2 text-white transition-all duration-300 group-hover:text-yellow-200">
+          דברו איתנו
         </h2>
-        <p className="text-[1.2rem] lg:text-[1.2rem] mb-4 leading-tight text-white transition-all duration-300 group-hover:text-blue-100">
+        <p className="text-base md:text-[1.2rem] mb-4 leading-tight text-white transition-all duration-300 group-hover:text-blue-100">
           רוצים לראות תוצאות{" "}
           <span className="block lg:inline">כבר מהחודש הראשון?</span>
           <br className="block lg:hidden" />
