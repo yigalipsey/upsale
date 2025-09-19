@@ -11,6 +11,7 @@ import HowItWorks from "./components/HowItWorks";
 import CallToAction from "./components/CallToAction";
 import FaqSection from "./components/FaqSection";
 import FooterWithContact from "./components/FooterWithContact";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export const metadata = {
   title: "Upsale | המומחים במכירות במיקור חוץ",
@@ -52,6 +53,7 @@ export default function Home() {
       <AboutOutsourcing />
       <FaqSection />
       <FooterWithContact />
+      <WhatsAppButton />
     </div>
   );
 }
