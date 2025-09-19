@@ -16,7 +16,7 @@ const Hero = () => {
       {/* גרסת מובייל */}
       <section
         id="home"
-        className="bg-[#092274] w-5/6 mx-auto lg:hidden relative font-rubik flex flex-col rounded-xl h-[70vh] px-0 py-0 overflow-hidden -mt-2"
+        className="bg-[#092274] w-5/6  mx-auto lg:hidden relative font-rubik flex flex-col rounded-xl  px-0 py-0 overflow-hidden -mt-2"
         style={{
           backgroundImage:
             "radial-gradient(at center center, #333652 0%, ##333652 33%, ##333652 66%, #333652 100%)",
@@ -35,7 +35,7 @@ const Hero = () => {
           </p>
 
           {/* כותרת ראשית */}
-          <h1 className="text-2xl mb-3 font-bold text-white leading-tight relative w-[95%]">
+          <h1 className="text-2xl mb-3 font-bold text-white leading-tight relative  w-[95%]">
             <span>שירותי המכירות במיקור חוץ של Upsale</span>
             <br />
             <span className="relative">
@@ -72,13 +72,13 @@ const Hero = () => {
         </div>
 
         {/* תמונה עם אנימציה */}
-        <motion.div className="w-full flex justify-center relative z-10">
+        <motion.div className="w-full  flex justify-center relative z-10">
           <NextImage
             src={heroImage2}
             alt="Hero Image Mobile"
             width={200}
             height={200}
-            className="h-auto mt-8"
+            className="h-auto mt-2"
             priority
           />
         </motion.div>
