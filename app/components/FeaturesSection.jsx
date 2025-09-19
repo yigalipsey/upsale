@@ -37,8 +37,8 @@ const FeaturesSection = () => {
                 מה מבדיל אותנו מהאחרים
               </h2>
               <p className="text-lg text-gray-800 leading-relaxed mb-2 text-center lg:text-right">
-                יותר מ־40 עסקים קטנים כבר הגדילו מכירות בעזרת Upsale מאז 2022 —
-                כך אנחנו עושים את זה
+                יותר מ־40 עסקים קטנים כבר הגדילו מכירות בעזרת Upsale — כך אנחנו
+                עושים את זה
               </p>
               <div className="text-center lg:text-right hidden lg:block">
                 <motion.a
@@ -48,7 +48,7 @@ const FeaturesSection = () => {
                   className="inline-flex items-center justify-center px-8 py-4 font-bold text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-[#092274] text-white hover:bg-[#001c55]"
                   aria-label="צור קשר"
                 >
-                  בוא נתחיל
+                  צור קשר לקביעת פגישת ייעוץ ללא עלות
                 </motion.a>
               </div>
             </div>

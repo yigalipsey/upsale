@@ -49,22 +49,22 @@ const FooterWithContact = () => {
         id="contact"
         className="relative font-rubik mt-20 bg-[#092274] text-white py-16 px-6 lg:px-24"
       >
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center">
-          <div className="lg:w-1/2 mt-[-140px] w-full border border-[#092274] border-[5px] bg-white text-[#092274] rounded-lg shadow-lg p-6 lg:relative">
+        <div className="max-w-7xl mx-auto flex flex-col">
+          <div className="lg:w-3/4 lg:mx-auto mt-[-140px] w-full border-[5px] border-[#092274] bg-white text-[#092274] rounded-lg shadow-lg p-6 lg:relative">
             <div className="text-center py-8">
               <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#092274] mx-auto"></div>
             </div>
           </div>
 
           {/* פוטר */}
-          <div className="lg:w-1/2 lg:mr-10 flex flex-col text-center lg:text-right mt-5 md:-mt-16 space-y-6">
+          <div className="w-full flex flex-col text-center lg:text-center mt-16 space-y-6">
             <div>
               <NextImage
                 src={Logo}
                 alt="Upsale Logo"
                 width={120}
                 height={40}
-                className="mx-auto text-white lg:mx-0 lg:mt-4"
+                className="mx-auto text-white lg:mx-auto lg:mt-4"
                 priority
               />
               <p className="text-sm mt-10 ">
@@ -72,13 +72,13 @@ const FooterWithContact = () => {
                 ובטוחה.
               </p>
             </div>
-            <div className="flex flex-col lg:flex-row gap-6 justify-center lg:justify-start">
+            <div className="flex flex-col lg:flex-row gap-6 justify-center lg:justify-center">
               <div>
                 <p className="font-bold">כתובת אימייל:</p>
                 <p className="text-sm">office@upsaleil.com</p>
               </div>
             </div>
-            <nav className="flex flex-col lg:flex-row gap-4 justify-center lg:justify-start">
+            <nav className="flex flex-col lg:flex-row gap-4 justify-center lg:justify-center">
               <a href="#home" className="text-sm hover:underline">
                 דף הבית
               </a>
@@ -105,17 +105,17 @@ const FooterWithContact = () => {
         id="contact"
         className="relative font-rubik mt-20 bg-[#092274] text-white py-16 px-6 lg:px-24"
       >
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div className="max-w-7xl mx-auto flex flex-col">
           {/* טופס יצירת קשר */}
-          <div className="lg:w-1/2 mt-[-140px] w-full border border-[#092274] border-[5px] bg-white text-[#092274] rounded-lg shadow-lg p-6 lg:relative ">
-            <h2 className="text-2xl lg:text-3xl font-bold mb-5 text-center md:text-right">
+          <div className="lg:w-3/4 lg:mx-auto mt-[-140px] w-full border-[5px] border-[#092274] bg-white text-[#092274] rounded-lg shadow-lg p-6 lg:relative ">
+            <h2 className="text-2xl lg:text-3xl font-bold mb-5 text-center">
               צור קשר
             </h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label
-                    className="block text-sm font-bold mb-1"
+                    className="block text-sm font-bold mb-1 text-center"
                     htmlFor="name"
                   >
                     שם מלא <span className="text-red-500">*</span>
@@ -130,7 +130,7 @@ const FooterWithContact = () => {
                 </div>
                 <div>
                   <label
-                    className="block text-sm font-bold mb-1"
+                    className="block text-sm font-bold mb-1 text-center"
                     htmlFor="email"
                   >
                     אימייל <span className="text-red-500">*</span>
@@ -153,7 +153,7 @@ const FooterWithContact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label
-                    className="block text-sm font-bold mb-1"
+                    className="block text-sm font-bold mb-1 text-center"
                     htmlFor="phone"
                   >
                     טלפון <span className="text-red-500">*</span>
@@ -168,7 +168,7 @@ const FooterWithContact = () => {
                 </div>
                 <div>
                   <label
-                    className="block text-sm font-bold mb-1"
+                    className="block text-sm font-bold mb-1 text-center"
                     htmlFor="message"
                   >
                     הודעה
@@ -233,14 +233,14 @@ const FooterWithContact = () => {
           </div>
 
           {/* פוטר */}
-          <div className="lg:w-1/2 lg:mr-10 flex flex-col text-center lg:text-right mt-5 md:-mt-16 space-y-6">
+          <div className="w-full flex flex-col text-center lg:text-center mt-16 space-y-6">
             <div>
               <NextImage
                 src={Logo}
                 alt="Upsale Logo"
                 width={120}
                 height={40}
-                className="mx-auto text-white lg:mx-0 lg:mt-4"
+                className="mx-auto text-white lg:mx-auto lg:mt-4"
                 priority
               />
               <p className="text-sm mt-10 ">
@@ -248,13 +248,13 @@ const FooterWithContact = () => {
                 ותשוקה להצלחה
               </p>
             </div>
-            <div className="flex flex-col lg:flex-row gap-6 justify-center lg:justify-start">
+            <div className="flex flex-col lg:flex-row gap-6 justify-center lg:justify-center">
               <div>
                 <p className="font-bold">כתובת אימייל:</p>
                 <p className="text-sm">office@upsaleil.com</p>
               </div>
             </div>
-            <nav className="flex flex-col lg:flex-row gap-4 justify-center lg:justify-start">
+            <nav className="flex flex-col lg:flex-row gap-4 justify-center lg:justify-center">
               <a href="#home" className="text-sm hover:underline">
                 דף הבית
               </a>

@@ -26,6 +26,17 @@ const ServicesSection = () => {
       className="py-16 px-6 lg:px-24 font-rubik bg-gray-50"
     >
       <div className="max-w-7xl mx-auto">
+        {/* כותרת הסקציה */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#001c55] mb-4">
+            השירותים שלנו
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            אנו מציעים שירותי מכירות מקצועיים המותאמים במיוחד לעסקים קטנים
+            ובינוניים
+          </p>
+        </div>
+
         {/* קוביות השירותים */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
@@ -57,8 +68,10 @@ const ServicesSection = () => {
                   </p>
 
                   {/* כפתור */}
-                  <div className="inline-flex items-center justify-center px-6 py-3 font-medium text-white bg-[#092274] rounded-lg hover:bg-[#001c55] transition-colors duration-200 mt-auto">
-                    לפרטים נוספים
+                  <div className="mt-auto flex justify-center">
+                    <div className="max-w-fit px-8 py-4 font-medium text-white bg-[#092274] rounded-lg hover:bg-[#001c55] transition-colors duration-200 text-center">
+                      לפרטים נוספים
+                    </div>
                   </div>
                 </div>
               </Link>

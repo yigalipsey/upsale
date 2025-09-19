@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs";
 import StatsSection from "./components/StatsSection";
 import FeaturesSection from "./components/FeaturesSection";
 import ServicesSection from "./components/ServicesSection";
+import HowItWorks from "./components/HowItWorks";
 import CallToAction from "./components/CallToAction";
 import FaqSection from "./components/FaqSection";
 import FooterWithContact from "./components/FooterWithContact";
@@ -42,12 +43,13 @@ export default function Home() {
       <NewNavbar />
       <Hero />
       <AboutUs />
+      <CallToAction />
       <ServicesSection />
       <WhyChooseUs />
+      <HowItWorks />
       <FeaturesSection />
-      <AboutOutsourcing />
 
-      <CallToAction />
+      <AboutOutsourcing />
       <FaqSection />
       <FooterWithContact />
     </div>
