@@ -135,7 +135,7 @@ const ArticlesSection = () => {
 
                 {/* כפתור קריאה */}
                 <a
-                  href={`/articles/sales-outsourcing-benefits`}
+                  href={`/articles/${article.slug}`}
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
                 >
                   קרא עוד
