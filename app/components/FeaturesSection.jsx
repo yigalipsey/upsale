@@ -76,7 +76,8 @@ const FeaturesSection = () => {
                         width={600}
                         height={400}
                         priority={index === 0} // טעינה מהירה לתמונה הראשונה
-                        onLoadingComplete={() => setLoaded(true)}
+                        onLoad={() => setLoaded(true)}
+                        sizes="(max-width: 1024px) 100vw, 600px"
                         className="w-[calc(100%-10px)] mx-[5px] mt-[5px] h-auto object-contain rounded-xl"
                       />
                     </div>
