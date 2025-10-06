@@ -1,34 +1,14 @@
+"use client";
+
 import React from "react";
+import Head from "next/head";
 import NewNavbar from "../components/NewNavbar";
 import FooterWithContact from "../components/FooterWithContact";
 import Pattern from "../components/Pattern";
 import { motion } from "framer-motion";
 import NextImage from "next/image";
 
-export const metadata = {
-  title: "מאמרים מקצועיים - מיקור חוץ מכירות ותיאום פגישות | Upsale",
-  description:
-    "קראו מאמרים מקצועיים על מיקור חוץ מכירות, תיאום פגישות וחיסכון בעלויות. טיפים, תובנות ומידע מקצועי שיעזרו לכם להבין את עולם המכירות במיקור חוץ.",
-  openGraph: {
-    title: "מאמרים מקצועיים - מיקור חוץ מכירות ותיאום פגישות | Upsale",
-    description: "קראו מאמרים מקצועיים על מיקור חוץ מכירות ותיאום פגישות",
-    url: "https://upsale.co.il/articles",
-    siteName: "Upsale",
-    images: [
-      {
-        url: "/images/articles/sales/1.avif",
-        width: 1200,
-        height: 630,
-        alt: "מאמרים מקצועיים Upsale",
-      },
-    ],
-    locale: "he_IL",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://upsale.co.il/articles",
-  },
-};
+// Metadata will be handled by layout or head component
 
 const AllArticlesPage = () => {
   const articles = [
@@ -106,6 +86,27 @@ const AllArticlesPage = () => {
 
   return (
     <div className="min-h-screen bg-white" dir="rtl">
+      <Head>
+        <title>מאמרים מקצועיים - מיקור חוץ מכירות ותיאום פגישות | Upsale</title>
+        <meta
+          name="description"
+          content="קראו מאמרים מקצועיים על מיקור חוץ מכירות, תיאום פגישות וחיסכון בעלויות. טיפים, תובנות ומידע מקצועי שיעזרו לכם להבין את עולם המכירות במיקור חוץ."
+        />
+        <meta
+          property="og:title"
+          content="מאמרים מקצועיים - מיקור חוץ מכירות ותיאום פגישות | Upsale"
+        />
+        <meta
+          property="og:description"
+          content="קראו מאמרים מקצועיים על מיקור חוץ מכירות ותיאום פגישות"
+        />
+        <meta property="og:url" content="https://upsale.co.il/articles" />
+        <meta property="og:site_name" content="Upsale" />
+        <meta property="og:image" content="/images/articles/sales/1.avif" />
+        <meta property="og:locale" content="he_IL" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://upsale.co.il/articles" />
+      </Head>
       <NewNavbar />
 
       {/* כותרת הדף */}
