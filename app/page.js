@@ -1,18 +1,23 @@
-import NextImage from "next/image";
+import dynamic from "next/dynamic";
 import Hero from "./components/Hero";
 import NewNavbar from "./components/NewNavbar";
-import AboutOutsourcing from "./components/AboutOutsourcing";
-import WhyChooseUs from "./components/WhyChooseUs";
 import AboutUs from "./components/AboutUs";
-import StatsSection from "./components/StatsSection";
-import FeaturesSection from "./components/FeaturesSection";
-import ServicesSection from "./components/ServicesSection";
-import HowItWorks from "./components/HowItWorks";
 import CallToAction from "./components/CallToAction";
-import FaqSection from "./components/FaqSection";
+import ServicesSection from "./components/ServicesSection";
+import WhyChooseUs from "./components/WhyChooseUs";
+import HowItWorks from "./components/HowItWorks";
+import FeaturesSection from "./components/FeaturesSection";
+import AboutOutsourcing from "./components/AboutOutsourcing";
 import ArticlesSection from "./components/ArticlesSection";
 import FooterWithContact from "./components/FooterWithContact";
-import WhatsAppButton from "./components/WhatsAppButton";
+
+// Lazy load components that are not critical for initial render
+const FaqSection = dynamic(() => import("./components/FaqSection"), {
+  loading: () => <div className="py-16 bg-gray-50 animate-pulse" />,
+});
+const WhatsAppButton = dynamic(() => import("./components/WhatsAppButton"), {
+  loading: () => null,
+});
 
 export const metadata = {
   title: "Upsale | המומחים במכירות במיקור חוץ",

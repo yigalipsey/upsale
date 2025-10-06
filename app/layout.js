@@ -113,6 +113,8 @@ export default function RootLayout({ children }) {
         />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="preload" href="/images/hero.avif" as="image" />
+        <link rel="preload" href="/images/hero-3.png" as="image" />
       </head>
       <body className={`antialiased ${rubik.className}`}>
         <GoogleAnalytics />

@@ -167,6 +167,7 @@ const AllArticlesPage = () => {
                     alt={article.title}
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   {/* קטגוריה */}
                   <div className="absolute top-4 right-4">

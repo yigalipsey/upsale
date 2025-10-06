@@ -80,6 +80,7 @@ const Hero = () => {
             height={200}
             className="h-auto mt-2"
             priority
+            sizes="(max-width: 768px) 200px, 200px"
           />
         </motion.div>
       </section>
@@ -149,6 +150,7 @@ const Hero = () => {
             height={950}
             className="h-full object-cover"
             priority
+            sizes="(max-width: 1024px) 50vw, 475px"
           />
         </motion.div>
       </section>

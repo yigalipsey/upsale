@@ -82,6 +82,7 @@ const ArticleRenderer = ({ articleData }) => {
                 width={item.width || 800}
                 height={item.height || 300}
                 className="w-full h-[300px] object-cover rounded-lg"
+                sizes="(max-width: 768px) 100vw, 800px"
               />
             </div>
           );
@@ -132,6 +133,7 @@ const ArticleRenderer = ({ articleData }) => {
             width={800}
             height={300}
             className="w-full h-[300px] object-cover rounded-lg"
+            sizes="(max-width: 768px) 100vw, 800px"
           />
         </div>
       )}
