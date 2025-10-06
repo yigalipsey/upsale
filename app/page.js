@@ -10,6 +10,7 @@ import ServicesSection from "./components/ServicesSection";
 import HowItWorks from "./components/HowItWorks";
 import CallToAction from "./components/CallToAction";
 import FaqSection from "./components/FaqSection";
+import ArticlesSection from "./components/ArticlesSection";
 import FooterWithContact from "./components/FooterWithContact";
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -51,6 +52,7 @@ export default function Home() {
       <FeaturesSection />
 
       <AboutOutsourcing />
+      <ArticlesSection />
       <FaqSection />
       <FooterWithContact />
       <WhatsAppButton />

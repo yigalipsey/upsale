@@ -47,6 +47,7 @@ const NewNavbar = () => {
     { href: "/", label: "בית" },
     { href: "#about", label: "אודות" },
     { href: "#services", label: "שירותים" },
+    { href: "/articles", label: "מאמרים" },
     { href: "#faq", label: "שאלות נפוצות" },
     { href: "#contact", label: "צור קשר" },
   ];
