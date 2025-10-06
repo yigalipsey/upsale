@@ -4,6 +4,7 @@ import NewNavbar from "../../components/NewNavbar";
 import FooterWithContact from "../../components/FooterWithContact";
 import Pattern from "../../components/Pattern";
 import ArticleRenderer from "../../components/ArticleRenderer";
+import RelatedArticlesSection from "../../components/RelatedArticlesSection";
 import articleData from "../../data/articles/how-outsourcing-saves-money-and-resources.json";
 
 const HowOutsourcingSavesMoneyAndResourcesPage = () => {
@@ -50,10 +51,11 @@ const HowOutsourcingSavesMoneyAndResourcesPage = () => {
       {/* תוכן המאמר */}
       <div className="py-16 px-6 lg:px-24">
         <ArticleRenderer articleData={articleData} />
+        <RelatedArticlesSection currentArticleId={articleData.id} />
       </div>
 
       {/* CTA Section */}
-      <div className="bg-blue-50 py-16 px-6 lg:px-24">
+      <div className="py-16 px-6 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-[#001c55] mb-4">
             רוצה לחסוך כסף ומשאבים ולהתחיל לראות תוצאות במכירות כבר עכשיו?

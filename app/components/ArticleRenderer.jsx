@@ -95,35 +95,6 @@ const ArticleRenderer = ({ articleData }) => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      {/* כותרת המאמר */}
-      <div className="mb-8">
-        <h1 className="text-3xl lg:text-4xl font-bold text-[#001c55] mb-4">
-          {articleData.title}
-        </h1>
-        <p className="text-lg text-gray-600 mb-4">{articleData.excerpt}</p>
-
-        {/* מטא-דאטה */}
-        <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
-          <span className="flex items-center">
-            <svg
-              className="w-4 h-4 mr-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                clipRule="evenodd"
-              />
-            </svg>
-            {articleData.metadata.readTime}
-          </span>
-          <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-            {articleData.metadata.category}
-          </span>
-        </div>
-      </div>
-
       {/* תמונת המאמר */}
       {articleData.metadata.image && (
         <div className="mb-8">
@@ -143,9 +114,53 @@ const ArticleRenderer = ({ articleData }) => {
         {renderContent(articleData.content)}
       </div>
 
+      {/* קישורים חיצוניים */}
+      <div className="mt-8 pt-6 border-t border-gray-200">
+        <div className="space-y-2 mb-4">
+          <a
+            href="https://blog.hubspot.com/sales"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-gray-600 hover:text-gray-800 transition-colors duration-200 text-sm"
+          >
+            <svg
+              className="w-3 h-3 inline mr-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                clipRule="evenodd"
+              />
+            </svg>
+            למאמרים בנושא מכירות במיקור חוץ ב-HubSpot
+          </a>
+          <a
+            href="https://en.m.wikipedia.org/wiki/Sales_outsourcing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-gray-600 hover:text-gray-800 transition-colors duration-200 text-sm"
+          >
+            <svg
+              className="w-3 h-3 inline mr-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                clipRule="evenodd"
+              />
+            </svg>
+            למידע מקיף על מיקור חוץ במכירות ב-Wikipedia
+          </a>
+        </div>
+      </div>
+
       {/* תגיות */}
       {articleData.metadata.tags && (
-        <div className="mt-8 pt-6 border-t border-gray-200">
+        <div className="mt-4">
           <h3 className="text-lg font-semibold text-gray-900 mb-3">תגיות:</h3>
           <div className="flex flex-wrap gap-2">
             {articleData.metadata.tags.map((tag, index) => (
