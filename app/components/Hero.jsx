@@ -8,7 +8,7 @@ import ScrollIndicator from "./ScrollIndicator";
 
 // ייבוא תמונות
 import heroImage from "../../public/images/hero.avif";
-import heroImage2 from "../../public/images/hero-3.png"; // תמונה למובייל
+import heroImage2 from "../../public/images/hero-3.avif"; // תמונה למובייל
 
 const Hero = () => {
   return (

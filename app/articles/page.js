@@ -100,12 +100,12 @@ const AllArticlesPage = () => {
           property="og:description"
           content="קראו מאמרים מקצועיים על מיקור חוץ מכירות ותיאום פגישות"
         />
-        <meta property="og:url" content="https://upsale.co.il/articles" />
+        <meta property="og:url" content="https://upsaleil.com/articles" />
         <meta property="og:site_name" content="Upsale" />
         <meta property="og:image" content="/images/articles/sales/1.avif" />
         <meta property="og:locale" content="he_IL" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://upsale.co.il/articles" />
+        <link rel="canonical" href="https://upsaleil.com/articles" />
       </Head>
       <NewNavbar />
 

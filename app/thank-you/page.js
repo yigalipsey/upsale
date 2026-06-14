@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Head from "next/head";
 import NextImage from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -42,6 +43,9 @@ const ThankYouPage = () => {
   }, []);
   return (
     <>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <ConversionTracker />
       <div className="min-h-screen bg-gradient-to-br from-[#092274] via-[#001c55] to-[#092274] flex items-center justify-center p-6 -mt-20 md:-mt-24 pt-20 md:pt-24">
         <div className="max-w-2xl mx-auto text-center">

@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: articleData.metadata.seo.title,
     description: articleData.metadata.seo.description,
-    url: `https://upsale.co.il/articles/${articleData.id}`,
+    url: `https://upsaleil.com/articles/${articleData.id}`,
     siteName: "Upsale",
     images: [
       {
@@ -27,7 +27,7 @@ export const metadata = {
     type: "article",
   },
   alternates: {
-    canonical: `https://upsale.co.il/articles/${articleData.id}`,
+    canonical: `https://upsaleil.com/articles/${articleData.id}`,
   },
 };
 

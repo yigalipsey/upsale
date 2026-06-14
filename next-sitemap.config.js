@@ -3,7 +3,7 @@ module.exports = {
   siteUrl: process.env.SITE_URL || "https://upsaleil.com",
   generateRobotsTxt: true,
   generateIndexSitemap: false,
-  exclude: ["/admin/*", "/api/*"],
+  exclude: ["/admin/*", "/api/*", "/thank-you"],
   robotsTxtOptions: {
     policies: [
       {

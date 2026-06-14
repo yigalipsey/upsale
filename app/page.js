@@ -26,11 +26,11 @@ export const metadata = {
   openGraph: {
     title: "Upsale | המומחים במכירות במיקור חוץ",
     description: "הרחיבו את צוות המכירות שלכם עם מיקור חוץ איכותי!",
-    url: "https://upsale.co.il",
+    url: "https://upsaleil.com",
     siteName: "Upsale",
     images: [
       {
-        url: "/images/hero.png",
+        url: "/images/hero.avif",
         width: 1200,
         height: 630,
         alt: "Upsale - מיקור חוץ מכירות",
@@ -40,7 +40,7 @@ export const metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://upsale.co.il",
+    canonical: "https://upsaleil.com",
   },
 };
 

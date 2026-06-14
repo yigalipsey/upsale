@@ -7,9 +7,29 @@ import FooterWithContact from "../../components/FooterWithContact";
 import Pattern from "../../components/Pattern";
 
 export const metadata = {
-  title: "שירותי מכירות בטלפון במיקור חוץ | Upsale",
+  title: "שירותי טלמיטינג מקצועיים",
   description:
-    "צוותי מכירה מקצועיים עם ניסיון של מעל 10 שנים, מתמחים במכירות B2B ו-B2C לעסקים קטנים ובינוניים בטלפון",
+    "תיאום פגישות איכותיות עם לקוחות פוטנציאליים, בניית אמון וסגירת עסקאות בטלפון. צוות מקצועי עם מעל 10 שנות ניסיון.",
+  openGraph: {
+    title: "שירותי טלמיטינג מקצועיים | Upsale",
+    description:
+      "תיאום פגישות איכותיות עם לקוחות פוטנציאליים, בניית אמון וסגירת עסקאות בטלפון.",
+    url: "https://upsaleil.com/services/Telemeeting",
+    siteName: "Upsale",
+    images: [
+      {
+        url: "/images/articles/telemeeting/1.avif",
+        width: 1200,
+        height: 630,
+        alt: "שירותי טלמיטינג מקצועיים",
+      },
+    ],
+    locale: "he_IL",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://upsaleil.com/services/Telemeeting",
+  },
 };
 
 const TelemeetingPage = () => {

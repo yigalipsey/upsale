@@ -7,9 +7,29 @@ import FooterWithContact from "../../components/FooterWithContact";
 import Pattern from "../../components/Pattern";
 
 export const metadata = {
-  title: "שירותי מכירות במיקור חוץ | Upsale",
+  title: "שירותי מכירות במיקור חוץ",
   description:
-    "צוותי מכירה מקצועיים עם ניסיון של מעל 10 שנים, מתמחים במכירות B2B ו-B2C לעסקים קטנים ובינוניים",
+    "צוותי מכירה מקצועיים עם ניסיון של מעל 10 שנים, מתמחים במכירות B2B ו-B2C לעסקים קטנים ובינוניים. מודל גמיש, תוצאות מוכחות.",
+  openGraph: {
+    title: "שירותי מכירות במיקור חוץ | Upsale",
+    description:
+      "צוותי מכירה מקצועיים עם ניסיון של מעל 10 שנים, מתמחים במכירות B2B ו-B2C לעסקים קטנים ובינוניים.",
+    url: "https://upsaleil.com/services/sales-outsourcing",
+    siteName: "Upsale",
+    images: [
+      {
+        url: "/images/articles/sales/1.avif",
+        width: 1200,
+        height: 630,
+        alt: "שירותי מכירות במיקור חוץ",
+      },
+    ],
+    locale: "he_IL",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://upsaleil.com/services/sales-outsourcing",
+  },
 };
 
 const SalesOutsourcingPage = () => {

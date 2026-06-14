@@ -1,0 +1,331 @@
+{
+  "summary": {
+    "health_score": 34,
+    "business_type": "B2B Sales Outsourcing / Lead Generation Agency",
+    "target_market": "Israeli SMBs",
+    "language": "Hebrew (RTL)",
+    "top_findings": [
+      "Canonical URLs point to wrong domain (upsale.co.il instead of upsaleil.com)",
+      "No meta descriptions on any page",
+      "Zero JSON-LD structured data across entire site",
+      "No dedicated About page (/about returns 404)",
+      "Mobile hero image is PNG (2MB raw) instead of AVIF (~25KB)"
+    ],
+    "quick_wins": [
+      "Fix canonical URLs to point to upsaleil.com",
+      "Add meta descriptions to all pages",
+      "Convert mobile hero image from PNG to AVIF",
+      "Add noindex to /thank-you and remove from sitemap",
+      "Fix duplicate title on /articles page"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 35,
+      "what_works": [
+        "robots.txt properly configured with sitemap reference",
+        "HTTP→HTTPS 308 redirect working correctly",
+        "HSTS set to 2 years",
+        "Vercel edge with 150ms TTFB"
+      ],
+      "findings": [
+        {
+          "title": "Canonical URLs point to wrong domain",
+          "severity": "Critical",
+          "description": "Every page on upsaleil.com has canonical tag pointing to upsale.co.il. Service subpages additionally canonical to the homepage instead of their own URL. This splits SEO signals between two domains.",
+          "recommendation": "Change root layout canonical base to 'https://upsaleil.com' and set self-referencing canonicals per page."
+        },
+        {
+          "title": "/services/telemarketing returns 404",
+          "severity": "Critical",
+          "description": "The page /services/telemarketing exists in the codebase but returns a 404 (Vercel error page). It is also missing from the sitemap.",
+          "recommendation": "Either create the page at the expected URL or set up a 301 redirect to /services/Telemeeting."
+        },
+        {
+          "title": "/thank-you indexed and in sitemap",
+          "severity": "High",
+          "description": "The post-conversion /thank-you page is included in the sitemap and has no noindex meta tag, signaling Google to index a page with no SEO value.",
+          "recommendation": "Add <meta name='robots' content='noindex'> to /thank-you and remove it from sitemap."
+        },
+        {
+          "title": "Sitemap has stale dates and uniform priorities",
+          "severity": "High",
+          "description": "All 16 sitemap URLs share identical lastmod (2025-10-06, 8+ months old), identical changefreq (weekly), and identical priority (0.7). Includes /thank-you; missing potential pages.",
+          "recommendation": "Generate dynamic sitemap with accurate lastmod dates. Set homepage priority 1.0, services 0.8, articles 0.6-0.7."
+        },
+        {
+          "title": "Missing security headers",
+          "severity": "Medium",
+          "description": "Content-Security-Policy, X-Content-Type-Options, and X-Frame-Options headers are all missing.",
+          "recommendation": "Add security headers in vercel.json or next.config.mjs headers() function."
+        },
+        {
+          "title": "Missing hreflang tags",
+          "severity": "Medium",
+          "description": "No hreflang tags on any page for the Hebrew-language site.",
+          "recommendation": "Add hreflang='he' and x-default tags to all pages."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 40,
+      "what_works": [
+        "Homepage has ~800-1000 words of unique content",
+        "FAQ section with 10 relevant questions",
+        "Articles provide substantive information on sales outsourcing topics",
+        "Contact form present on all pages"
+      ],
+      "findings": [
+        {
+          "title": "No dedicated About page",
+          "severity": "High",
+          "description": "/about returns 404. The only company information is a ~100-word inline section on the homepage with no named founders, team credentials, or company history.",
+          "recommendation": "Create a dedicated /about page with founder names, team bios, company history, and physical address."
+        },
+        {
+          "title": "No author credentials on articles",
+          "severity": "High",
+          "description": "All 11 article pages attribute content to 'Upsale Team' only. No named authors, LinkedIn profiles, or professional qualifications displayed.",
+          "recommendation": "Add named authors with bios and LinkedIn links to each article."
+        },
+        {
+          "title": "Unsubstantiated claims",
+          "severity": "High",
+          "description": "Claims of '40+ small businesses increased sales' and '25% average increase in 3 months' are stated without any client testimonials, case studies, logos, or verifiable references.",
+          "recommendation": "Add client testimonials, named case studies, or verifiable statistics."
+        },
+        {
+          "title": "No physical business address",
+          "severity": "High",
+          "description": "No physical address is listed anywhere on the site. Only contact methods are WhatsApp number and email. Israeli commercial websites are required to display a business address.",
+          "recommendation": "Add physical business address to contact section and footer."
+        },
+        {
+          "title": "Very thin content on service article subpages",
+          "severity": "High",
+          "description": "/services/Telemeeting/article-1 has only ~180-220 words. Other article subpages have 400-500 words, below the threshold for competitive ranking.",
+          "recommendation": "Expand all article subpages to 600+ words minimum with unique, substantive content."
+        },
+        {
+          "title": "Thin service pages",
+          "severity": "Medium",
+          "description": "/services/sales-outsourcing and /services/Telemeeting each have only 400-500 words with minimal heading depth (2 H2s each).",
+          "recommendation": "Add 300+ words of original detail to each service page with proper H2/H3 hierarchy."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 25,
+      "what_works": [
+        "Homepage title tag is well-crafted (58 chars)",
+        "H1 tags exist on all pages (though some pages have duplicates)",
+        "Internal linking structure connects main pages"
+      ],
+      "findings": [
+        {
+          "title": "Missing meta descriptions on all pages",
+          "severity": "Critical",
+          "description": "No page has a correctly-sized meta description. They are either entirely missing or far exceed the 150-160 character limit (some reaching 200-300 chars).",
+          "recommendation": "Add unique 150-160 character meta descriptions to every page using Next.js metadata exports."
+        },
+        {
+          "title": "Duplicate title tags across pages",
+          "severity": "High",
+          "description": "Homepage and /articles share identical title: 'Upsale | המומחים במכירות במיקור חוץ'. Multiple pages have 'Upsale | Upsale' double branding.",
+          "recommendation": "Ensure every page has a unique title. Use pattern 'Page Title | Upsale' not 'Page Title | Upsale | Upsale'."
+        },
+        {
+          "title": "Homepage has 3 H1 tags",
+          "severity": "High",
+          "description": "The homepage uses 3 H1 elements: hero text, main headline, and 'Who we are?' section. Only one H1 per page is SEO best practice.",
+          "recommendation": "Consolidate to a single H1. Change 'מי אנחנו?' and hero line to H2."
+        },
+        {
+          "title": "Wrong OG tags on subpages",
+          "severity": "High",
+          "description": "Service pages and article subpages inherit homepage OG title, description, and image. Social sharing will display generic homepage info.",
+          "recommendation": "Set page-specific OG metadata in each page's generateMetadata export."
+        },
+        {
+          "title": "Navigation uses buttons not links",
+          "severity": "Medium",
+          "description": "Nav items for About, Services, FAQ, Contact use <button> elements with scroll-to-section JS. On subpages where these sections don't exist, navigation breaks.",
+          "recommendation": "Replace with proper <a href> links to standalone pages, or implement conditional navigation."
+        },
+        {
+          "title": "Over-length meta descriptions on article pages",
+          "severity": "Medium",
+          "description": "Article page meta descriptions range from 162-307 characters, all exceeding the 150-160 char display limit.",
+          "recommendation": "Trim all meta descriptions to 150-160 characters."
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 0,
+      "what_works": [],
+      "findings": [
+        {
+          "title": "Zero JSON-LD structured data",
+          "severity": "Critical",
+          "description": "No JSON-LD schema markup was found on any page. This means no rich snippets in SERPs, no knowledge graph entries, and reduced AI crawlability.",
+          "recommendation": "Implement Organization schema on all pages, LocalBusiness schema with address/phone, FAQ schema on homepage FAQ, Article schema on all 11 article pages, BreadcrumbList schema, and Service schema on service pages."
+        }
+      ]
+    },
+    {
+      "name": "Performance / Core Web Vitals",
+      "score": 65,
+      "what_works": [
+        "TTFB ~150ms (Vercel edge, excellent)",
+        "Static assets cached 1 year with immutable directive",
+        "Brotli compression active (81% reduction)",
+        "Self-hosted Hebrew-subsetted fonts (9KB WOFF2)",
+        "font-display: swap for fast text rendering",
+        "All images have explicit width/height (CLS prevention)",
+        "Responsive srcSet on all images"
+      ],
+      "findings": [
+        {
+          "title": "Mobile hero image is PNG (2MB raw)",
+          "severity": "High",
+          "description": "The mobile hero image (hero-3.png) is served as PNG at 262KB @750w. An AVIF equivalent would be ~25KB — a 90% reduction. This is the LCP element on mobile.",
+          "recommendation": "Re-export hero-3 as AVIF and update the import in the Hero component."
+        },
+        {
+          "title": "Large vendors JavaScript chunk (767KB)",
+          "severity": "Medium",
+          "description": "The vendors JS bundle is 767KB even though it loads async. Total JS payload is ~942KB — heavy for a content-focused site.",
+          "recommendation": "Audit vendor dependencies for tree-shaking. Consider dynamic imports for heavy libraries."
+        },
+        {
+          "title": "Unused Google Fonts preconnects",
+          "severity": "Low",
+          "description": "Preconnect hints for fonts.googleapis.com and fonts.gstatic.com are present but Rubik is self-hosted via Next.js — these connections are never used.",
+          "recommendation": "Remove the Google Fonts preconnect hints."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 20,
+      "what_works": [
+        "Clear business niche and service descriptions",
+        "FAQ content available for AI extraction"
+      ],
+      "findings": [
+        {
+          "title": "No llms.txt file",
+          "severity": "Medium",
+          "description": "No llms.txt at the site root for AI crawler accessibility.",
+          "recommendation": "Create llms.txt with key site information and structure for AI crawlers."
+        },
+        {
+          "title": "No structured data for AI citation",
+          "severity": "High",
+          "description": "Without JSON-LD schema, AI systems cannot reliably extract business information, services, FAQs, or article content for citation.",
+          "recommendation": "Implement full JSON-LD schema suite (see Schema category)."
+        },
+        {
+          "title": "Claims lack citations for AI verification",
+          "severity": "Medium",
+          "description": "Statistical claims ('40+ businesses', '25% increase') lack citations or linked evidence, making them unreliable for AI citation.",
+          "recommendation": "Add verifiable citations, case studies, or third-party references."
+        },
+        {
+          "title": "Hebrew language limitation",
+          "severity": "Low",
+          "description": "Hebrew content is underrepresented in AI training data compared to English, reducing citability for Hebrew-language queries.",
+          "recommendation": "Consider bilingual content strategy (Hebrew primary, English summaries) to increase AI visibility."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 70,
+      "what_works": [
+        "100% alt text coverage with descriptive Hebrew text",
+        "12 of 15 images use modern AVIF format",
+        "Responsive srcSet on all images via Next.js Image",
+        "Proper preload hints with fetchPriority='high' on hero images"
+      ],
+      "findings": [
+        {
+          "title": "Mobile hero image uses PNG format",
+          "severity": "High",
+          "description": "hero-3.png is the only PNG among 15 images. At matching resolutions, AVIF is 8-12x smaller. This directly impacts mobile LCP.",
+          "recommendation": "Convert hero-3.png to AVIF format."
+        },
+        {
+          "title": "Two article images could be better compressed",
+          "severity": "Low",
+          "description": "Two article hero images are 65-68KB at 1200w resolution. They could be compressed further or served at 828w max for article cards.",
+          "recommendation": "Apply stronger compression or reduce max resolution for article card images."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Fix canonical URLs — change from upsale.co.il to upsaleil.com",
+          "Fix 'Upsale | Upsale' double branding in title tags",
+          "Add meta descriptions to all pages",
+          "Restore or redirect /services/telemarketing",
+          "Convert mobile hero from PNG to AVIF",
+          "Add noindex to /thank-you and remove from sitemap",
+          "Fix duplicate title on /articles page"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "Rebuild sitemap with accurate lastmod and differentiated priorities",
+          "Create dedicated About page with team credentials and address",
+          "Add JSON-LD structured data (Organization, FAQ, Article, BreadcrumbList, LocalBusiness)",
+          "Fix heading structure (3 H1s → 1 H1 on homepage)",
+          "Add page-specific OG tags for social sharing",
+          "Fix navigation to use proper links not scroll buttons",
+          "Replace Google Site Verification placeholder with real token"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Expand thin content pages to 600+ words minimum",
+          "Add client testimonials and named case studies",
+          "Add author credentials to all articles",
+          "Add physical business address",
+          "Add hreflang tags (he-IL, x-default)",
+          "Replace generic article-1/2/3 slugs with descriptive URLs",
+          "Add security headers (CSP, X-Content-Type-Options)"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Set up Google Search Console with real verification token",
+          "Reduce vendors JS bundle size",
+          "Create llms.txt for AI crawler access",
+          "Remove unused Google Fonts preconnects",
+          "Set up regular sitemap regeneration on deploy",
+          "Monitor Core Web Vitals via CrUX/GA4",
+          "Quarterly content audit and E-E-A-T review"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

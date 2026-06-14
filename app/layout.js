@@ -11,13 +11,13 @@ const rubik = Rubik({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://upsale.co.il"),
+  metadataBase: new URL("https://upsaleil.com"),
   title: {
     default: "Upsale | המומחים במכירות במיקור חוץ",
     template: "%s | Upsale",
   },
   description:
-    "Upsale - שירותי מכירה חכמים לעסקים קטנים. הגדלת מכירות, תהליכים מותאמים אישית, ודוחות מדידים.",
+    "הרחיבו את צוות המכירות שלכם עם מיקור חוץ איכותי! אנו מספקים צוותי מכירות מקצועיים עם ניהול צמוד, תסריטי שיחה מותאמים אישית וסדנאות מכירה קבועות.",
   keywords: [
     "מיקור חוץ מכירות",
     "צוות מכירות חיצוני",
@@ -50,7 +50,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "he_IL",
-    url: "https://upsale.co.il",
+    url: "https://upsaleil.com",
     siteName: "Upsale",
     title: "Upsale | המומחים במכירות במיקור חוץ",
     description:
@@ -78,11 +78,14 @@ export const metadata = {
     creator: "@upsale",
   },
   alternates: {
-    canonical: "https://upsale.co.il",
+    canonical: "https://upsaleil.com",
+    languages: {
+      "he-IL": "https://upsaleil.com",
+      "x-default": "https://upsaleil.com",
+    },
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
       { url: "/images/smal-logo.avif", sizes: "32x32", type: "image/avif" },
       { url: "/images/smal-logo.avif", sizes: "16x16", type: "image/avif" },
     ],
@@ -105,16 +108,38 @@ export default function RootLayout({ children }) {
         />
         <meta name="theme-color" content="#092274" />
         <meta name="color-scheme" content="light" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <link rel="preload" href="/images/hero.avif" as="image" />
-        <link rel="preload" href="/images/hero-3.png" as="image" />
+        <link rel="preload" href="/images/hero-3.avif" as="image" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  name: "Upsale",
+                  url: "https://upsaleil.com",
+                  logo: "https://upsaleil.com/images/smal-logo.avif",
+                  email: "office@upsaleil.com",
+                  telephone: "+972-53-335-0910",
+                  description:
+                    "שירותי מכירות במיקור חוץ לעסקים קטנים ובינוניים - צוותי מכירה מקצועיים, תיאום פגישות וסגירת עסקאות",
+                  areaServed: { "@type": "Country", name: "Israel" },
+                  knowsLanguage: ["he", "en"],
+                },
+                {
+                  "@type": "WebSite",
+                  url: "https://upsaleil.com",
+                  name: "Upsale",
+                  inLanguage: "he-IL",
+                },
+              ],
+            }),
+          }}
+        />
       </head>
       <body className={`antialiased ${rubik.className}`}>
         <GoogleAnalytics />

@@ -11,7 +11,7 @@ const HowOutsourcingSavesMoneyAndResourcesPage = () => {
   return (
     <div className="min-h-screen bg-white" dir="rtl">
       <Head>
-        <title>{articleData.metadata.seo.title}</title>
+        <title>{articleData.metadata.seo.title} | Upsale</title>
         <meta
           name="description"
           content={articleData.metadata.seo.description}
