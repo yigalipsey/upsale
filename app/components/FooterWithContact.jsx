@@ -103,6 +103,24 @@ const FooterWithContact = () => {
                 יצירת קשר
               </a>
             </nav>
+            <div className="border-t border-white/10 pt-6">
+              <span className="flex items-center justify-center gap-2 text-xs text-white/60">
+                עוצב ופותח על ידי
+                <a
+                  href="https://www.bizcraftil.com/he"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center hover:opacity-80 transition-opacity"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/bizcraft-logo.avif"
+                    alt="BIZCRAFT"
+                    className="h-4 w-auto brightness-0 invert"
+                  />
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -310,6 +328,24 @@ const FooterWithContact = () => {
                 יצירת קשר
               </a>
             </nav>
+            <div className="border-t border-white/10 pt-6">
+              <span className="flex items-center justify-center gap-2 text-xs text-white/60">
+                עוצב ופותח על ידי
+                <a
+                  href="https://www.bizcraftil.com/he"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center hover:opacity-80 transition-opacity"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/bizcraft-logo.avif"
+                    alt="BIZCRAFT"
+                    className="h-4 w-auto brightness-0 invert"
+                  />
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </section>
